@@ -1,10 +1,8 @@
 """Run the minimal KGRL example: synthetic inputs -> PPO -> paths -> metrics."""
 import hashlib
-import importlib.metadata
 import json
 import os
 from pathlib import Path
-import platform
 import sys
 import time
 
@@ -12,23 +10,21 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "src"))
 os.environ.setdefault("OMP_NUM_THREADS", "1")
 os.environ.setdefault("MKL_NUM_THREADS", "1")
-os.environ["CUDA_VISIBLE_DEVICES"] = ""
 
 
 def main():
     started = time.perf_counter()
+    from kgrl.runtime import configure, environment, load_config, synchronize
+    config = load_config(ROOT)
+    configure(config)
     import numpy as np
     import pandas as pd
     import torch
-    from kgrl.core.device import set_device
     from kgrl.core.seed import set_seed
     from scripts.generate_sample_data import generate
 
-    torch.set_num_threads(1)
-    set_device("cpu")
     from kgrl.demo import Demo
 
-    config = json.loads((ROOT / "configs/demo.json").read_text(encoding="utf-8"))
     if config["training"]["ppo_batch_size"] < 2 or config["training"]["num_episodes"] < 2:
         raise ValueError("Use at least two episodes and PPO batch size >= 2")
     set_seed(config["seed"])
@@ -39,12 +35,14 @@ def main():
 
     def stage(name, fn):
         print(name + " ...", flush=True)
+        synchronize()
         start = time.perf_counter()
         result = fn()
+        synchronize()
         timings[name] = round(time.perf_counter() - start, 3)
         return result
 
-    stage("generate_data", lambda: generate(ROOT))
+    stage("generate_data", lambda: generate(ROOT, config))
     demo = Demo(ROOT, config)
     training = stage("train_ppo", lambda: demo.train(out))
     set_seed(config["seed"] + 1)
@@ -72,9 +70,7 @@ def main():
                     **training, "starts": len(demo.nodes), "predicted_paths": len(predictions),
                     "unchanged_core_files": len(manifest["unchanged_core"]), "timings_seconds": timings,
                     "total_seconds": elapsed}
-    environment = {"python": platform.python_version(), "platform": platform.platform(), "device": "CPU", "threads": 1,
-                   "packages": {n: importlib.metadata.version(n) for n in ["torch", "numpy", "pandas"]}}
-    (out / "environment.json").write_text(json.dumps(environment, indent=2), encoding="utf-8")
+    (out / "environment.json").write_text(json.dumps(environment(), indent=2), encoding="utf-8")
     (out / "verification.json").write_text(json.dumps(verification, indent=2), encoding="utf-8")
     print(f"PASS: {training['optimizer_updates']} PPO updates, {len(predictions)} paths; {elapsed:.1f} s. Results: {out}")
 

@@ -1,4 +1,4 @@
-# Tested with CPython 3.10.21; CPU is sufficient.
+# Python 3.10. Install the matching CUDA-enabled PyTorch wheel first.
 torch==2.11.0
 numpy==1.24.3
 pandas==2.0.3

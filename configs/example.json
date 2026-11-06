@@ -1,0 +1,69 @@
+{
+  "configuration_role": "illustrative_example_not_paper_hyperparameters",
+  "seed": 17,
+  "experiment_seeds": [17, 31],
+  "runtime": {
+    "device": "cuda",
+    "cpu_threads": 1
+  },
+  "training": {
+    "num_episodes": 36,
+    "max_steps_per_episode": 5,
+    "learning_rate": 0.0003,
+    "ppo_epochs": 3,
+    "ppo_clip_epsilon": 0.15,
+    "entropy_beta": 0.02,
+    "ppo_batch_size": 20,
+    "anti_hub_loss_enabled": true,
+    "anti_hub_node_lambda": 0.03,
+    "anti_hub_pair_lambda": 0.015,
+    "anti_hub_ema_rho": 0.98,
+    "curriculum_switch_fraction": 0.4
+  },
+  "model": {
+    "entity_dim": 48,
+    "relation_dim": 24,
+    "gru_hidden_dim": 48,
+    "mlp_hidden_dim": 24
+  },
+  "environment": {
+    "rotate_reward_scale": 0.12,
+    "rotate_score_enabled": true,
+    "penalty_scale": 0.18,
+    "penalty_decay_rate": 0.8,
+    "temporal_scale": 0.25,
+    "temporal_pair_scope": "adjacent",
+    "anti_hacking_penalty_enabled": true,
+    "pair_penalty_scale": 0.35,
+    "usage_ema_rho": 0.98,
+    "repeat_penalty_scale": 0.12,
+    "sequence_reward_enabled": true,
+    "sequence_reward_scale": 0.8,
+    "direct_weight": 0.6,
+    "second_order_weight": 0.25,
+    "third_order_weight": 0.15,
+    "candidate_mode": "temporal_first_reachable",
+    "temporal_filter_enabled": false,
+    "reachability_filter_enabled": true,
+    "reachability_max_hops": 2,
+    "order_bonus_enabled": true,
+    "order_bonus_hop1": 0.04,
+    "order_bonus_hop2": 0.015,
+    "order_bonus_hop3": 0.005,
+    "max_candidate_actions": 8,
+    "sr_belief_enabled": true,
+    "sr_belief_top_m": 4,
+    "sr_belief_tau": 0.7,
+    "sr_same_score": 0.15,
+    "sr_unreachable_score": 0.025,
+    "sr_belief_min_prob": 0.00001
+  },
+  "inference": {
+    "max_steps": 4,
+    "num_samples": 12,
+    "top_k": 6,
+    "temperature": 1.1,
+    "top_p": 0.92,
+    "sample_action_top_k": 7
+  }
+}

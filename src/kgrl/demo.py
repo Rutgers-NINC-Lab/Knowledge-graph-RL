@@ -16,11 +16,13 @@ from kgrl.env.semiology_env import EnhancedSemiologyPathEnv
 from kgrl.models.actor_critic import PathfindingActor, PathfindingCritic
 from kgrl.sampling import PolicySampler
 from kgrl import metrics
+from kgrl.core.device import get_device
 
 
 class Demo:
     def __init__(self, root, config):
         self.root, self.config = root, config
+        self.device = get_device()
         self.sample = json.loads((root / "data/sample.json").read_text(encoding="utf-8"))
         self.nodes = self.sample["nodes"]
         self.relations = {r: i for i, r in enumerate(self.sample["relations"])}
@@ -31,7 +33,7 @@ class Demo:
             self.embeddings = {n: arrays["entity"][i].copy() for i, n in enumerate(self.nodes)}
             self.rotate_entities = {n: arrays["rotate_entity"][i].copy() for i, n in enumerate(self.nodes)}
             self.rotate_relations = {r: arrays["rotate_relation"][i].copy() for r, i in self.relations.items()}
-        self.tensors = {n: torch.as_tensor(v) for n, v in self.embeddings.items()}
+        self.tensors = {n: torch.as_tensor(v, device=self.device) for n, v in self.embeddings.items()}
         self.temporal = {(a, b): w for a, b, w in self.sample["temporal_pairs"]}
         self.kb = KnowledgeBase(root / "data/train_data")
 
@@ -47,13 +49,13 @@ class Demo:
         )
 
     def actor(self):
-        return PathfindingActor(len(self.relations), **self.config["model"])
+        return PathfindingActor(len(self.relations), **self.config["model"]).to(self.device)
 
     def train(self, out, algorithm="ppo", curriculum=True):
         cfg = self.config["training"]
         actor = self.actor()
         model = self.config["model"]
-        critic = PathfindingCritic(model["entity_dim"], model["gru_hidden_dim"], model["mlp_hidden_dim"])
+        critic = PathfindingCritic(model["entity_dim"], model["gru_hidden_dim"], model["mlp_hidden_dim"]).to(self.device)
         initial = {k: v.detach().clone() for k, v in actor.state_dict().items()}
         opt_a = torch.optim.Adam(actor.parameters(), lr=cfg["learning_rate"])
         opt_c = torch.optim.Adam(critic.parameters(), lr=cfg["learning_rate"])
@@ -113,13 +115,13 @@ class Demo:
                     dist = Categorical(probs=probs)
                     if algorithm == "dqn":
                         epsilon = linear_epsilon(transitions, 1.0, 0.05, 5000)
-                        action = torch.tensor(random.randrange(len(actions)) if random.random() < epsilon else int(scores.argmax()))
+                        action = torch.tensor(random.randrange(len(actions)) if random.random() < epsilon else int(scores.argmax()), device=self.device)
                     else:
                         action = dist.sample()
                     logprob = dist.log_prob(action)
                 current, reward, done, info = env.step(actions[action.item()], relations[action.item()])
                 with torch.no_grad():
-                    next_value = torch.tensor(0.0) if done else critic(self.tensors[start], self.tensors[current], next_hc)[0].squeeze()
+                    next_value = torch.tensor(0.0, device=self.device) if done else critic(self.tensors[start], self.tensors[current], next_hc)[0].squeeze()
                 if algorithm == "dqn":
                     next_state = None if done else {"start_emb": self.tensors[start], "current_emb": self.tensors[current],
                                 "current_node": current, "hidden_actor": next_ha.detach().clone(),
@@ -153,7 +155,7 @@ class Demo:
                 "unused_final_transitions": len(buffer) if algorithm != "dqn" else 0}
 
     def infer(self, out, mode="policy", max_steps=None, num_samples=None, starts=None, write=True):
-        checkpoint = torch.load(out / "model.pt", map_location="cpu", weights_only=True)
+        checkpoint = torch.load(out / "model.pt", map_location=self.device, weights_only=True)
         assert checkpoint["config"] == self.config, "Checkpoint/config mismatch"
         actor = self.actor()
         actor.load_state_dict(checkpoint["actor"])
@@ -182,9 +184,9 @@ class Demo:
                         scores, _, hidden, relations = actor(self.tensors[start], self.tensors[current], hidden,
                                                             actions, self.tensors, current_node_name=current)
                         if mode in {"score", "greedy"}:
-                            scores = torch.tensor([a[4] for a in actions])
+                            scores = torch.tensor([a[4] for a in actions], device=self.device)
                         elif mode == "random":
-                            scores = torch.zeros(len(actions))
+                            scores = torch.zeros(len(actions), device=self.device)
                         probs, indices, base = sampler._sampling_distribution(scores)
                         if mode == "random":
                             index = random.randrange(len(actions))

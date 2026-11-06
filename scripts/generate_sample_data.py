@@ -6,7 +6,7 @@ from pathlib import Path
 import numpy as np
 
 
-def generate(root: Path):
+def generate(root: Path, config):
     data = root / "data"
     kb = data / "train_data"
     kb.mkdir(parents=True, exist_ok=True)
@@ -39,10 +39,13 @@ def generate(root: Path):
               "temporal_pairs": [[nodes[i], nodes[i + 1], 1.0] for i in range(7)],
               "training_sequences": [[nodes[(i + j) % 16] for j in range(5)] for i in range(8)]}
     (data / "sample.json").write_text(json.dumps(sample, indent=2), encoding="utf-8")
-    entity = rng.normal(0, 0.2, (16, 32)).astype("float32")
-    rotate_entity = rng.normal(0, 0.2, (16, 32)).astype("float32")
+    dimension = config["model"]["entity_dim"]
+    if dimension < 2 or dimension % 2:
+        raise ValueError("The example entity dimension must be a positive even number.")
+    entity = rng.normal(0, 0.2, (16, dimension)).astype("float32")
+    rotate_entity = rng.normal(0, 0.2, (16, dimension)).astype("float32")
     # The source scorer reads the second half as phase angles.
-    phase = rng.uniform(-np.pi, np.pi, (3, 16)).astype("float32")
+    phase = rng.uniform(-np.pi, np.pi, (3, dimension // 2)).astype("float32")
     rotate_relation = np.concatenate([np.zeros_like(phase), phase], axis=1)
     np.savez(data / "embeddings.npz", entity=entity, rotate_entity=rotate_entity,
              rotate_relation=rotate_relation)
@@ -59,4 +62,5 @@ def generate(root: Path):
 
 
 if __name__ == "__main__":
-    generate(Path(__file__).resolve().parents[1])
+    root = Path(__file__).resolve().parents[1]
+    generate(root, json.loads((root / "configs/example.json").read_text()))

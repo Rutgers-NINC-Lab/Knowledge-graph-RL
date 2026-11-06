@@ -11,18 +11,17 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[2]
 EXP = ROOT / "outputs/experiments"
 RESULTS = ROOT / "outputs/results"
-SEEDS = [42, 43]
 sys.path.insert(0, str(ROOT / "src"))
-os.environ["CUDA_VISIBLE_DEVICES"] = ""
 os.environ.setdefault("OMP_NUM_THREADS", "1")
 os.environ.setdefault("MKL_NUM_THREADS", "1")
+from kgrl.runtime import configure, load_config
+CONFIG = load_config(ROOT)
+DEVICE = configure(CONFIG)
+SEEDS = CONFIG["experiment_seeds"]
 
 import numpy as np
 import pandas as pd
 import torch
-from kgrl.core.device import set_device
-set_device("cpu")
-torch.set_num_threads(1)
 from kgrl.core.seed import set_seed
 from kgrl.demo import Demo
 from kgrl import metrics
@@ -32,8 +31,9 @@ from scripts.generate_sample_data import generate
 def prepare():
     (EXP / "logs").mkdir(parents=True, exist_ok=True)
     RESULTS.mkdir(parents=True, exist_ok=True)
-    generate(ROOT)
-    return json.loads((ROOT / "configs/demo.json").read_text())
+    config = load_config(ROOT)
+    generate(ROOT, config)
+    return config
 
 
 def write(frame, path):

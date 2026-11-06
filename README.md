@@ -1,29 +1,59 @@
-# Knowledge Graph RL
+# KGRL
 
-Implementation of knowledge graph reinforcement learning for our paper **Uncovering Epileptic Seizure Propagation Using Knowledge Graph-based Reinforcement Learning**.
+## Uncovering Epileptic Seizure Propagation Using Knowledge Graph-based Reinforcement Learning
 
-The code retains the KGRL graph environment, SR reasoning, RotatE and path rewards, GRU actor-critic, PPO, DQN, and behavioral cloning. It includes two-stage curriculum training, reward-ranked path sampling, and sequence evaluation.
+**Shihao Yang\*, Zirui Wen\*, Erafat Rehim, Vasileios Kokkinos, Alexander Weil, Yen-Cheng Shih, Yo-Tsen Liu, and Feng Liu**
 
-## Run
+\* Equal contribution
 
-Tested with Python 3.10.21 on Windows using CPU execution. In a Python environment, install the dependencies and run the core example:
+[Method](#method) · [GPU setup](#gpu-setup) · [Experiments](#experiments-and-results) · [Citation](#citation)
 
-```bash
-python -m pip install -r requirements.txt
-python run_demo.py
+Research code accompanying our paper. KGRL models seizure propagation as a sequence of decisions over a knowledge graph, connecting observed semiology with plausible brain-region trajectories. The framework combines structured clinical knowledge, anatomical connectivity, and temporal consistency to guide reinforcement learning and path inference.
+
+## Method
+
+```mermaid
+flowchart LR
+    A[Sequential semiology] --> B[Knowledge graph and region associations]
+    B --> C[Graph-constrained policy learning]
+    C --> D[Candidate propagation trajectories]
+    D --> E[Reward-based ranking and sequence evaluation]
+    F[Connectivity and temporal knowledge] --> B
+    F --> C
 ```
 
-The example generates synthetic inputs, trains PPO for 24 episodes, reloads the model, decodes paths, and evaluates them. A successful run prints `PASS`. No original KGRL checkout or pre-existing data files are required.
+The implementation includes a GRU actor-critic, PPO with curriculum training, graph and temporal reward components, region-belief reasoning, and sequence-based evaluation. DQN, behavioral cloning, non-learning baselines, and component ablations share the same environment and scoring interface.
 
-To run the baseline comparisons, ablations, diagnostics, and plotting workflows:
+## GPU setup
+
+The GPU execution profile uses **Python 3.10**, **PyTorch 2.11 with CUDA 12.8**, NumPy, pandas, and Matplotlib. The historical full-run reference workstation has a **single NVIDIA RTX A6000 with 48 GB VRAM**.
 
 ```bash
+git clone https://github.com/Rutgers-NINC-Lab/Knowledge-graph-RL.git
+cd Knowledge-graph-RL
+python -m pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cu128
+python -m pip install -r requirements.txt
+```
+
+CUDA installation details are available in the [official PyTorch installation guide](https://pytorch.org/get-started/previous-versions/). The distributed configuration selects `cuda` by default; `KGRL_DEVICE=cuda:0` selects a particular GPU.
+
+### Run the implementation
+
+```bash
+# Training, checkpoint reload, inference, and evaluation
+python run_demo.py
+
+# Baselines, ablations, decoding comparisons, diagnostics, and result analysis
 python scripts/run_experiments.py
 ```
 
-On Windows, `RUN_DEMO.ps1` runs the core example; add `-Experiments` for the full workflow. Use `-Python 'C:\path\to\python.exe'` to select an interpreter explicitly. The earlier `-Report` switch remains an alias.
+The repository includes a synthetic input generator so that these workflows can be executed independently. **`configs/example.json` contains illustrative settings, not the paper's tuned hyperparameters.** Original clinical records, trained embeddings, and pretrained checkpoints are not distributed. The example outputs demonstrate the computations rather than reproduce the paper's clinical numerical results.
 
-The experiments can also be run separately from the repository directory. Run the baseline comparison first to create the shared PPO checkpoints:
+On Windows, `RUN_DEMO.ps1` runs the core workflow and `RUN_DEMO.ps1 -Experiments` runs the experiment suite. Add `-Python 'C:\path\to\python.exe'` to select an interpreter.
+
+## Experiments and results
+
+Experiment runners are separated from result aggregation and plotting. Run the baseline experiment first to create the shared checkpoints and candidate paths:
 
 ```bash
 python -m scripts.experiments.baselines
@@ -32,48 +62,37 @@ python -m scripts.experiments.decoding
 python -m scripts.experiments.diagnostics
 ```
 
-## Code
+Paths below are relative to `scripts/`.
 
-| Path | Purpose |
-|---|---|
-| `run_demo.py` | Core training, inference, evaluation, and execution checks |
-| `configs/demo.json` | Demo settings |
-| `src/kgrl/` | Algorithms, actor-critic, graph environment, SR reasoning, rewards, and metrics |
-| `scripts/generate_sample_data.py` | Synthetic input generator |
-| `scripts/run_experiments.py` | Run and verify the complete experiment suite |
-| `scripts/experiments/baselines.py` | PPO, DQN, BC and non-learning baseline comparisons |
-| `scripts/experiments/ablations.py` | Four component ablations |
-| `scripts/experiments/decoding.py` | PPO beam-decoding comparison |
-| `scripts/experiments/diagnostics.py` | Candidate-budget and path-length sweeps |
-| `scripts/results/` | Aggregate experiment outputs, calculate statistics, and draw figures |
-| `docs/source_manifest.json` | Source provenance and hashes checked by the core example |
-
-Both entry points create `data/` and `outputs/` locally. Experiment paths, checkpoints, and training logs go to `outputs/experiments/`; final tables, figure data, and six PNG/PDF plots go to `outputs/results/`. These generated files, checkpoints, caches, and the journal reproducibility report are excluded from version control.
-
-## Figure and table code
-
-Paths below are relative to `scripts/`. Result modules read generated experiment outputs and do not retrain the models.
-
-| Manuscript item | Experiment code | Result code |
+| Paper item | Experiment | Result analysis |
 |---|---|---|
-| Figures 3-5 | Input-data analysis | `results/knowledge_analysis.py` |
-| Figure 7 | `experiments/diagnostics.py` | `results/diagnostics.py` |
-| Figure 8 | `experiments/baselines.py` supplies candidates | `results/diagnostics.py` |
-| Figure 9B and network data | `experiments/baselines.py` supplies paths | `results/propagation_network.py` |
 | Table 1 | `experiments/baselines.py` | `results/comparison_tables.py` |
 | Table 2 | `experiments/ablations.py` | `results/comparison_tables.py` |
 | Table 3 | `experiments/decoding.py` | `results/comparison_tables.py` |
-| Tables 4(a,b) and 5 | `experiments/baselines.py` supplies paths | `results/case_analysis.py` |
+| Tables 4(a,b) and 5 | Saved baseline paths | `results/case_analysis.py` |
+| Figures 3-5 | Knowledge and annotation inputs | `results/knowledge_analysis.py` |
+| Figure 7 | `experiments/diagnostics.py` | `results/diagnostics.py` |
+| Figure 8 | Saved baseline candidates | `results/diagnostics.py` |
 
-For result-only processing, run modules such as `python -m scripts.results.comparison_tables` or `python -m scripts.results.diagnostics` after the corresponding experiments have completed.
+Result modules can be rerun without retraining, for example `python -m scripts.results.comparison_tables`. Intermediate paths, checkpoints, and logs are written to `outputs/experiments/`; final tables and figures are written to `outputs/results/`.
 
-All inputs and results in these examples are synthetic. The workflows verify execution rather than recover the manuscript's clinical estimates. Figure 9 includes network data and the panel-B matrix; anatomical panel A is not rendered. Figures 1, 2, and 6 are diagrams and are not generated.
+### Full-study runtime reference
 
-Twelve core modules are unchanged from KGRL. Sampling and metric definitions preserve their original calculations; behavioral cloning uses the original temporal-soft-target loss with the shared actor interface. No clinical records, trained embeddings, or pretrained models are distributed.
+Budget approximately **1-2 days for the complete study-scale workflow on one GPU**, including baseline training, ablations, decoding, and diagnostic sweeps. This is a planning estimate informed by archived full training runs, rather than a timing of the small distributed example. See [runtime assumptions](docs/RUNTIME.md) for the recorded training ranges and the scope of this estimate.
 
-## License
+## Repository guide
 
-MIT; see `LICENSE`.
+```text
+configs/example.json        Illustrative configuration
+src/kgrl/                   Core learning, graph, reward, and evaluation modules
+scripts/experiments/        Baseline, ablation, decoding, and diagnostic experiments
+scripts/results/            Statistical summaries, tables, and plots
+scripts/generate_sample_data.py
+scripts/run_experiments.py
+run_demo.py
+```
+
+Generated inputs, results, model files, caches, and the journal reproducibility report are excluded from version control. The original KGRL algorithm modules retain their source provenance in `docs/source_manifest.json`.
 
 ## Citation
 
@@ -88,3 +107,7 @@ If you find this work useful in your research, please consider citing our paper:
   publisher={Taylor \& Francis}
 }
 ```
+
+## License
+
+Released under the [MIT License](LICENSE). This repository provides research software for investigating seizure propagation.

@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying paper."
+type: software
+title: "KGRL: Knowledge Graph Reinforcement Learning for Seizure Propagation"
+repository-code: "https://github.com/Rutgers-NINC-Lab/Knowledge-graph-RL"
+license: MIT
+authors:
+  - family-names: "Yang"
+    given-names: "Shihao"
+  - family-names: "Wen"
+    given-names: "Zirui"
+  - family-names: "Rehim"
+    given-names: "Erafat"
+  - family-names: "Kokkinos"
+    given-names: "Vasileios"
+  - family-names: "Weil"
+    given-names: "Alexander"
+  - family-names: "Shih"
+    given-names: "Yen-Cheng"
+  - family-names: "Liu"
+    given-names: "Yo-Tsen"
+  - family-names: "Liu"
+    given-names: "Feng"
+preferred-citation:
+  type: article
+  title: "Uncovering Epileptic Seizure Propagation Using Knowledge Graph-based Reinforcement Learning"
+  journal: "IISE Transactions"
+  year: 2026
+  authors:
+    - family-names: "Yang"
+      given-names: "Shihao"
+    - family-names: "Wen"
+      given-names: "Zirui"
+    - family-names: "Rehim"
+      given-names: "Erafat"
+    - family-names: "Kokkinos"
+      given-names: "Vasileios"
+    - family-names: "Weil"
+      given-names: "Alexander"
+    - family-names: "Shih"
+      given-names: "Yen-Cheng"
+    - family-names: "Liu"
+      given-names: "Yo-Tsen"
+    - family-names: "Liu"
+      given-names: "Feng"
