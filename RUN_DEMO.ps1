@@ -1,4 +1,4 @@
-param([string]$Python = '', [switch]$Report)
+param([string]$Python = '', [Alias('Report')][switch]$Experiments)
 $ErrorActionPreference = 'Stop'
 if (-not $Python) {
     $localVenv = Join-Path $PSScriptRoot '.venv\Scripts\python.exe'
@@ -12,7 +12,7 @@ $oldBytecode = $env:PYTHONDONTWRITEBYTECODE
 try {
     $env:PYTHONUTF8 = '1'
     $env:PYTHONDONTWRITEBYTECODE = '1'
-    $entry = if ($Report) { 'scripts\run_report.py' } else { 'run_demo.py' }
+    $entry = if ($Experiments) { 'scripts\run_experiments.py' } else { 'run_demo.py' }
     & $Python (Join-Path $PSScriptRoot $entry)
     if ($LASTEXITCODE -ne 0) { throw 'KGRL demo failed; inspect the error above.' }
 } finally {
