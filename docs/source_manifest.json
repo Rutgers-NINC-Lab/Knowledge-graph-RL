@@ -1,0 +1,76 @@
+{
+  "unchanged_core": [
+    {
+      "path": "src/kgrl/core/device.py",
+      "sha256": "2a3e84ac29f684d32cc8ac90ac378e1496031b99e30de077baac3c42d59ac1a1"
+    },
+    {
+      "path": "src/kgrl/core/paths.py",
+      "sha256": "91d6a57b6f97755ab337b0fff76427a588299eabd7bdfa6a226630d3685f9179"
+    },
+    {
+      "path": "src/kgrl/core/seed.py",
+      "sha256": "99feada2f69742f1dcba5da4c0bc985ae6fa1f1cf9f523345d556886a82a32d1"
+    },
+    {
+      "path": "src/kgrl/models/actor_critic.py",
+      "sha256": "20c1e0a42227b344a1d7d17da2b60de88f586dfafb4b43efd28a46a762fe12ea"
+    },
+    {
+      "path": "src/kgrl/algorithms/ppo.py",
+      "sha256": "63cfa334c2ec4a0a1e894ecd106db980dfefafa9a4e46004cf1c893fd63ad7dd"
+    },
+    {
+      "path": "src/kgrl/data/knowledge_base.py",
+      "sha256": "50fe44949d470b8557d7ecd951a598a0d0b882ccd72817e1054bab00f08d1ca7"
+    },
+    {
+      "path": "src/kgrl/env/semiology_env.py",
+      "sha256": "d0d7f9ad8941f72f9f6dd31159984ee6453105b8715e2900c5ff54d663b34e47"
+    },
+    {
+      "path": "src/kgrl/env/candidates.py",
+      "sha256": "b81e6db8baad675afc5a3a2b2937e0444e72e9ecc49dc76b2c4d5f312d5f07d8"
+    },
+    {
+      "path": "src/kgrl/env/scoring.py",
+      "sha256": "7c17e774e4f79665effd4af700007f0552bfd0cbfa318ea567468fd8af713def"
+    },
+    {
+      "path": "src/kgrl/env/sr_belief.py",
+      "sha256": "46677585d6dec9b906340763e2272154aa9b86308b4608954c64b375f4a38b68"
+    },
+    {
+      "path": "src/kgrl/env/sr_reasoning.py",
+      "sha256": "f77678de281c687f219fa1bff02600c5bda5bb0cbb25ef1ff1e459a589cb503a"
+    },
+    {
+      "path": "src/kgrl/algorithms/dqn.py",
+      "sha256": "dca978e62a20bf536bb839a5042b7780280b759fcc1be17284256a209bd73033"
+    }
+  ],
+  "extracted_functions": {
+    "scripts/evaluation/lcs.py": [
+      "ReferenceEntry",
+      "normalize_node",
+      "split_path_to_nodes",
+      "parse_reference_layers",
+      "layers_to_repr",
+      "layer_weights",
+      "lcs_length",
+      "weighted_lcs",
+      "prediction_edges",
+      "reference_edges",
+      "edge_scores",
+      "harmonic_f1",
+      "score_candidate",
+      "load_reference_rows"
+    ],
+    "src/kgrl/inference/engine.py": [
+      "EnhancedInferenceEngine._sampling_distribution"
+    ]
+  },
+  "adapted_functions": {
+    "src/kgrl/algorithms/bc.py": "bc_update from src/kgrl/training/enhanced_one_layer_bc.py; temporal_weights argument removed from the actor call to use the current shared actor. Temporal soft targets, label smoothing, cross-entropy and entropy loss unchanged."
+  }
+}

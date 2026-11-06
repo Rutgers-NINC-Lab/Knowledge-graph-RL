@@ -1,0 +1,33 @@
+# Generated inputs, experiment outputs and checkpoints
+/data/
+/outputs/
+/models/
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.npy
+*.csv
+*.log
+
+# Local reports and validation notes
+*.docx
+*.pdf
+*.png
+*.pptx
+/docs/FIGURE_TABLE_MAP.md
+/docs/VALIDATION_RESULTS.md
+~$*
+
+# Python environments, caches and local settings
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.env
+.env.*
+.DS_Store
+Thumbs.db
