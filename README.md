@@ -1,6 +1,6 @@
 # Knowledge Graph RL
 
-A compact implementation of knowledge graph reinforcement learning for **Uncovering Epileptic Seizure Propagation Using Knowledge Graph-based Reinforcement Learning**.
+Implementation of knowledge graph reinforcement learning for our paper **Uncovering Epileptic Seizure Propagation Using Knowledge Graph-based Reinforcement Learning**.
 
 The code retains the KGRL graph environment, SR reasoning, RotatE and path rewards, GRU actor-critic, PPO, DQN, and behavioral cloning. It includes two-stage curriculum training, reward-ranked path sampling, and sequence evaluation.
 
@@ -74,3 +74,17 @@ Twelve core modules are unchanged from KGRL. Sampling and metric definitions pre
 ## License
 
 MIT; see `LICENSE`.
+
+## Citation
+
+If you find this work useful in your research, please consider citing our paper:
+
+```bibtex
+@article{yang2026uncovering,
+  title={Uncovering Epileptic Seizure Propagation Using Knowledge Graph-based Reinforcement Learning},
+  author={Yang, Shihao and Wen, Zirui and Rehim, Erafat and Kokkinos, Vasileios and Weil, Alexander and Shih, Yen-Cheng and Liu, Yo-Tsen and Liu, Feng},
+  journal={IISE Transactions},
+  year={2026},
+  publisher={Taylor \& Francis}
+}
+```
