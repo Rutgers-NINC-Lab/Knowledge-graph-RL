@@ -143,11 +143,11 @@ def ppo_update(actor, critic, optimizer_actor, optimizer_critic, buffer,
     rewards_data = [float(r) for r in buffer_data['rewards']]
     values_data = torch.stack(buffer_data['values']).detach()
     
-    # 统一 next_values 的形状：确保所有都是标量或相同形状
+    # Normalize next_values shapes so all values are scalars or share the same shape.
     next_values_list = []
     for nv in buffer_data['next_values']:
         if isinstance(nv, torch.Tensor):
-            # 如果是张量，确保是标量
+            # Ensure tensor values are scalars.
             if nv.dim() > 0:
                 nv = nv.squeeze()
             if nv.dim() > 0:

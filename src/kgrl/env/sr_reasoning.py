@@ -263,7 +263,7 @@ class SRReasoningMixin:
         return {'direct': direct, 'second': second, 'third': third}
 
     def get_next_sr_candidates(self, next_node_str):
-        """获取下一个节点的SR候选"""
+        """Get candidate SRs for the next node."""
         new_srs = self._get_candidate_srs_for_semiology(next_node_str)
         if not new_srs:
             return {
@@ -272,7 +272,7 @@ class SRReasoningMixin:
                 'non_preferred': []
             }
         
-        # 如果有当前SR，优先选择连接的SR
+        # Prefer connected SRs when a current SR is available.
         if self.current_sr:
             connected_srs = set(self.knowledge_base.get_connected_srs(self.current_sr, 'both'))
             connected_srs.add(self.current_sr)

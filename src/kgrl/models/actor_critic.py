@@ -16,7 +16,7 @@ class PathfindingActor(nn.Module):
         self.gru = nn.GRU(self.gru_input_dim, gru_hidden_dim, batch_first=True)
         
         self.action_scorer_input_dim = gru_hidden_dim + relation_dim + entity_dim + 1
-        # 漏斗形架构解决信息瓶颈：3457 -> 1024 -> 512 -> 128 -> 1
+        # Funnel architecture to address the information bottleneck: 3457 -> 1024 -> 512 -> 128 -> 1
         self.action_scorer = nn.Sequential(
             nn.Linear(self.action_scorer_input_dim, 1024), nn.ReLU(),
             nn.Linear(1024, 512), nn.ReLU(),
@@ -140,11 +140,11 @@ class PathfindingActor(nn.Module):
 class PathfindingCritic(nn.Module):
     def __init__(self, entity_dim, gru_hidden_dim, mlp_hidden_dim):
         super().__init__()
-        self.gru_hidden_dim = gru_hidden_dim  # 保存 gru_hidden_dim 供 init_hidden 使用
+        self.gru_hidden_dim = gru_hidden_dim  # Store gru_hidden_dim for init_hidden.
         self.gru_input_dim = entity_dim + entity_dim
         self.gru = nn.GRU(self.gru_input_dim, gru_hidden_dim, batch_first=True)
         
-        # 优化 Critic 的 MLP 架构：256 -> 256 -> 128 -> 1
+        # Optimized critic MLP architecture: 256 -> 256 -> 128 -> 1
         self.value_head = nn.Sequential(
             nn.Linear(gru_hidden_dim, 256), nn.ReLU(),
             nn.Linear(256, 128), nn.ReLU(),

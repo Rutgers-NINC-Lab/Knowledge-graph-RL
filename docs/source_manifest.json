@@ -14,11 +14,15 @@
     },
     {
       "path": "src/kgrl/models/actor_critic.py",
-      "sha256": "20c1e0a42227b344a1d7d17da2b60de88f586dfafb4b43efd28a46a762fe12ea"
+      "sha256": "c71f1420bea3bdd333594d309cd8017729c6e56276cb620b7e1cf26222f3df01",
+      "source_sha256": "20c1e0a42227b344a1d7d17da2b60de88f586dfafb4b43efd28a46a762fe12ea",
+      "changes": "English translations of comments and docstrings only; executable logic unchanged."
     },
     {
       "path": "src/kgrl/algorithms/ppo.py",
-      "sha256": "63cfa334c2ec4a0a1e894ecd106db980dfefafa9a4e46004cf1c893fd63ad7dd"
+      "sha256": "272d812e05311766a06e406e4c629ff868065cbe1962f740dc6ca9ff9b3aafe9",
+      "source_sha256": "63cfa334c2ec4a0a1e894ecd106db980dfefafa9a4e46004cf1c893fd63ad7dd",
+      "changes": "English translations of comments and docstrings only; executable logic unchanged."
     },
     {
       "path": "src/kgrl/data/knowledge_base.py",
@@ -42,7 +46,9 @@
     },
     {
       "path": "src/kgrl/env/sr_reasoning.py",
-      "sha256": "f77678de281c687f219fa1bff02600c5bda5bb0cbb25ef1ff1e459a589cb503a"
+      "sha256": "d76771975395e3192e6ccab3dc359a0e57de85cb095ff19745e2205e5f1ba4ff",
+      "source_sha256": "f77678de281c687f219fa1bff02600c5bda5bb0cbb25ef1ff1e459a589cb503a",
+      "changes": "English translations of comments and docstrings only; executable logic unchanged."
     },
     {
       "path": "src/kgrl/algorithms/dqn.py",

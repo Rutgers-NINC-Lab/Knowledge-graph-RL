@@ -8,14 +8,14 @@ import pandas as pd
 @dataclass(frozen=True)
 class ReferenceEntry:
     row_idx: int
-    layers: List[Set[str]]          # reference 的“层”（每层是一个候选集合）
-    weights: List[float]            # 每层权重
-    total_weight: float             # 权重和
-    repr_path: str                  # 规范化后的可读 path（A -> B/C -> D）
+    layers: List[Set[str]]          # Reference layers; each layer is a set of candidates.
+    weights: List[float]            # Weight of each layer.
+    total_weight: float             # Sum of layer weights.
+    repr_path: str                  # Normalized readable path (A -> B/C -> D).
 
 
 def normalize_node(node: str, drop_epilepsy: bool = True) -> str:
-    """清洗节点字符串（可选去掉 ' epilepsy' 后缀，并压缩空格）。"""
+    """Clean a node label, optionally removing ' epilepsy' and collapsing whitespace."""
     if node is None:
         return ""
     clean = str(node).strip()
@@ -26,7 +26,7 @@ def normalize_node(node: str, drop_epilepsy: bool = True) -> str:
 
 
 def split_path_to_nodes(path_str: str, drop_epilepsy: bool) -> List[str]:
-    """pred: 'A -> B -> C' -> ['A','B','C']（不支持层内多选）"""
+    """pred: 'A -> B -> C' -> ['A','B','C']; multiple choices per layer are not supported."""
     if path_str is None or (isinstance(path_str, float) and math.isnan(path_str)):
         return []
     text = str(path_str).strip()
@@ -68,7 +68,7 @@ def parse_reference_layers(path_str: str, drop_epilepsy: bool) -> List[Set[str]]
 
 
 def layers_to_repr(layers: Sequence[Set[str]]) -> str:
-    """把 layers 还原成可读字符串：[{A},{B,C},{D}] -> 'A -> B/C -> D'"""
+    """Convert layers to a readable string: [{A},{B,C},{D}] -> 'A -> B/C -> D'."""
     parts: List[str] = []
     for layer in layers:
         if not layer:
@@ -101,7 +101,7 @@ def layer_weights(layers: Sequence[Set[str]], vocab_size: int, mode: str, alpha:
 
 
 def lcs_length(pred: Sequence[str], ref_layers: Sequence[Set[str]]) -> int:
-    """标准 LCS（pred[i] 命中 ref_layer[j] 的条件是 pred[i] in ref_layer[j]）"""
+    """Standard LCS; pred[i] matches reference layer j when pred[i] is in ref_layers[j]."""
     n, m = len(pred), len(ref_layers)
     if n == 0 or m == 0:
         return 0
@@ -117,7 +117,7 @@ def lcs_length(pred: Sequence[str], ref_layers: Sequence[Set[str]]) -> int:
 
 
 def weighted_lcs(pred: Sequence[str], ref_layers: Sequence[Set[str]], weights: Sequence[float]) -> float:
-    """加权 LCS：命中第 j 层累加 weights[j]"""
+    """Weighted LCS; a match in layer j adds weights[j]."""
     n, m = len(pred), len(ref_layers)
     if n == 0 or m == 0:
         return 0.0
@@ -183,7 +183,7 @@ def score_candidate(
     use_chance_correct: bool,
 ) -> Dict[str, float]:
     """
-    返回：LCS/WLCS 的 precision/recall/F1 及其 penalized score
+    Return LCS/WLCS precision, recall, F1, and their penalized scores.
     extra_steps = (|pred|-LCS) + (|ref|-LCS)
     """
     if not ref.layers:
@@ -219,7 +219,7 @@ def score_candidate(
     if lcs_len == 1:
         lcs_len = 0
     wlcs = weighted_lcs(pred, ref.layers, ref.weights)
-    if lcs_len == 0:   # 注意这里用 lcs_len（已经被截断过）
+    if lcs_len == 0:   # Use lcs_len after the truncation above.
         wlcs = 0.0
 
     wlcsr_cc = 0.0
@@ -309,9 +309,9 @@ def load_reference_rows(
     df = pd.read_csv(reference_csv)
 
     if reference_path_col not in df.columns:
-        raise ValueError(f"reference 缺少列：{reference_path_col}；实际列名：{list(df.columns)}")
+        raise ValueError(f"Reference data is missing column: {reference_path_col}; available columns: {list(df.columns)}")
 
-    # 先收集 vocab（用于 info 权重）
+    # Collect the vocabulary first for information-based weights.
     vocab: Set[str] = set()
     parsed_layers: List[Tuple[int, List[Set[str]]]] = []
     for idx, row in df.iterrows():
@@ -339,6 +339,6 @@ def load_reference_rows(
         )
 
     if not refs:
-        raise ValueError("reference 解析后为空：请检查 reference_path_col 与路径格式（是否包含 '->'）")
+        raise ValueError("No reference paths remain after parsing; check reference_path_col and the path format (expected '->').")
 
     return refs, vocab_size
