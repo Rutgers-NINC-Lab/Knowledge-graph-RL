@@ -1,5 +1,7 @@
 # Generated inputs, experiment outputs and checkpoints
-/data/
+/data/*
+!/data/training/
+/data/training/*
 /outputs/
 /models/
 *.pt
@@ -9,6 +11,18 @@
 *.npy
 *.csv
 *.log
+
+# Original training inputs selected for release
+!/data/training/merged_path.csv
+!/data/training/relation_triple_time.csv
+!/data/training/f2sr_Sheet1.csv
+!/data/training/brain_function_symptom_mapping1.csv
+!/data/training/fucn_conn.csv
+!/data/training/struc_conn_pairwise.csv
+!/data/training/final_triples.csv
+!/data/training/unique_semiology.csv
+!/data/training/training_sequences_unique.txt
+!/data/training/unique_semiology.txt
 
 # Local reports and validation notes
 *.docx

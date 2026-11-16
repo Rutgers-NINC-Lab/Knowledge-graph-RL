@@ -1,0 +1,382 @@
+entity1,Relation,entity2
+eye deviation,followed by,limb posturing
+vomiting,followed by,loss of consciousness
+eye deviation,after,awakening during sleep
+head movement,then,tonic activity
+numbness,followed by,numbness
+breath difficulty,followed by,tonic-clonic activity
+generalized clonic activity,followed by,tonic activity
+tonic activity,followed by,awareness alteration
+awareness loss,after,awakening during sleep
+confusion,after,lower limb paralysis
+lower limb paralysis,since,convulsion
+convulsion,and,convulsion
+convulsion,accompanied by,speech arrest
+speech arrest,since,confusion
+focal seizure,followed by,cough
+cough,then,breath difficulty
+nausea,then,vomiting
+tonic-clonic activity,then,confusion
+pain and discomfort,followed by,breath difficulty
+breath difficulty,after,fatigue
+focal clonic activity,followed by,tonic-clonic activity
+muscle twitching,followed by,dizziness
+staring,followed by,communication difficulty
+myoclonic activity,after,awakening during sleep
+focal seizure,followed by,bilateral tonic activity
+upper limb tonic,then,tonic-clonic activity
+pain and discomfort,after,awakening during sleep
+convulsion,after,muscle weakness
+convulsion,for about 1–2 minutes and,confusion
+epigastric sensation,followed by,awareness alteration
+awareness alteration,followed by,facial flushing
+awareness alteration,followed by,cognitive dysfunction
+cognitive dysfunction,followed by,behavioral arrest
+behavioral arrest,followed by,déjà vu
+déjà vu,followed by,tonic-clonic activity
+speech arrest,and then,tonic facial symptom
+staring,followed by,tonic-clonic activity
+tonic-clonic activity,followed by,confusion
+epigastric sensation,followed by,staring
+staring,followed by,speech arrest
+speech arrest,followed by,oral automatism
+oral paresthesia,followed by,oral automatism
+oral automatism,followed by,head deviation
+epigastric sensation,followed by,oral paresthesia
+epigastric sensation,followed by,oral automatism
+oral automatism,then,awareness loss
+olfactory hallucination,followed by,visual distortion
+visual symptoms,then,upper limb activity
+olfactory hallucination,followed by,gestural automatism
+gestural automatism,then,awareness loss
+respiratory change,followed by,epigastric sensation
+dizziness,followed by,unilateral blinking
+epigastric sensation,accompanied by,feelings of calm and peace
+dizziness,followed by,awareness loss
+dizziness,followed by,behavioral arrest
+behavioral arrest,followed by,tonic activity
+automotor symptoms,followed by,upper limb tonic
+upper limb tonic,followed by,postictal coughing
+postictal coughing,followed by,facial flushing
+nausea,then,vomiting
+vomiting,then,oral automatism
+oral automatism,then,muscle weakness
+muscle weakness,then,absence seizure
+behavioral arrest,followed by,muscle weakness
+muscle weakness,followed by,staring
+staring,followed by,atonic activity
+limb posturing,followed by,oral automatism
+confusion,followed by,awareness alteration
+focal seizure,followed by,tonic-clonic activity
+fear,then,visual symptoms
+visual symptoms,then,unresponsiveness
+loss of consciousness,then,groaning
+spasm,followed by,eye deviation
+awareness alteration,followed by,communication difficulty
+staring,followed by,head deviation
+head deviation,followed by,tonic-clonic activity
+epigastric sensation,often,awareness alteration
+awareness loss,followed by,oral automatism
+dystonia,followed by,confusion
+nausea,followed by,vomiting
+vomiting,with,awareness alteration
+behavioral arrest,followed by,oral automatism
+oral automatism,followed by,tonic-clonic activity
+fear,followed by,behavioral arrest
+behavioral arrest,followed by,awareness loss
+oral automatism,followed by,confusion
+focal seizure,followed by,behavioral arrest
+behavioral arrest,evolving to,tonic-clonic activity
+anxiety,followed by,behavioral arrest
+behavioral arrest,followed by,tonic-clonic activity
+cognitive dysfunction,followed by,focal seizure
+focal seizure,with,behavioral arrest
+anxiety,followed by,focal seizure
+awareness alteration,followed by,behavioral arrest
+automotor symptoms,evolving to,tonic-clonic activity
+dissociative sensations,followed by,unresponsiveness
+unresponsiveness,followed by,behavioral arrest
+tonic-clonic activity,followed by,eye deviation
+eye deviation,followed by,loss of consciousness
+abnormal behavior change,characterized by,upper limb tingling
+upper limb tingling,then,oral paresthesia
+oral paresthesia,followed by,confusion
+spasm,followed by,tonic-clonic activity
+abnormal somatosensory sensation,followed by,head deviation
+head deviation,followed by,oral automatism
+awareness alteration,followed by,awareness retention
+epigastric sensation,followed by,vomiting
+vomiting,followed by,loss of consciousness
+tonic-clonic activity,followed by,awareness alteration
+focal seizure,followed by,awareness alteration
+awareness alteration,followed by,tonic-clonic activity
+tonic activity,followed by,tonic-clonic activity
+upper limb tingling,followed by,upper limb tingling
+upper limb tingling,followed by,focal clonic activity
+abnormal somatosensory sensation,progressing to,lower limb tingling
+myoclonic activity,then,limb movement
+eye deviation,followed by,tonic-clonic activity
+focal clonic activity,then,tonic-clonic activity
+awakening during sleep,followed by,head movement
+head movement,then,spasm
+spasm,then,tonic activity
+tonic activity,then,atypical absence seizure
+upper limb automatism,followed by,generalized dystonic posturing
+generalized dystonic posturing,followed by,dystonia
+dystonia,followed by,facial grimacing and twitching
+visual symptoms,followed by,head deviation
+rocking,then,atonic activity
+atonic activity,then,convulsion
+focal seizure,followed by,awareness alteration
+awareness alteration,followed by,tonic activity
+focal clonic activity,followed by,bilateral tonic activity
+bilateral tonic activity,followed by,awareness loss
+awareness loss,followed by,asymmetric tonic activity
+asymmetric tonic activity,followed by,awareness alteration
+awareness alteration,followed by,behavioral arrest
+behavioral arrest,followed by,upper limb myoclonic activity
+upper limb myoclonic activity,followed by,eye movement
+eye movement,followed by,non-motor symptoms
+lower limb tonic,then,spasm
+tonic-clonic activity,followed by,tonic activity
+tonic activity,followed by,behavioral arrest
+tonic-clonic activity,then,atypical absence seizure
+atypical absence seizure,then,tonic-clonic activity
+focal clonic activity,followed by,tonic-clonic activity
+tonic-clonic activity,then,facial grimacing and twitching
+tonic-clonic activity,followed by,staring
+staring,followed by,stiffness
+clonic activity,followed by,swallow difficulty
+swallow difficulty,followed by,postictal aphasia
+focal seizure,followed by,focal clonic activity
+focal seizure,followed by,speech arrest
+focal seizure,followed by,visual hallucinations
+focal seizure,followed by,upper limb tingling
+focal seizure,followed by,lower limb movement
+focal seizure,followed by,auditory hallucination
+focal seizure,followed by,fear
+focal seizure,followed by,facial grimacing and twitching
+focal seizure,followed by,focal clonic activity
+focal seizure,followed by,olfactory hallucination
+focal seizure,followed by,lower limb tonic
+spasm,followed by,eye movement
+eye movement,followed by,spasm
+spasm,followed by,tonic activity
+tonic activity,followed by,limb posturing
+limb posturing,followed by,eye deviation
+eye deviation,followed by,tonic activity
+upper limb tonic,followed by,spasm
+spasm,followed by,limb posturing
+limb posturing,followed by,upper limb tonic
+motor activity,followed by,abnormal behavior change
+abnormal behavior change,followed by,motor behavior
+upper limb movement,followed by,tonic activity
+tonic activity,followed by,vocal automatism
+vocal automatism,followed by,vocal automatism
+vocal automatism,followed by,awareness retention
+oral movement,followed by,upper limb myoclonic activity
+upper limb myoclonic activity,followed by,tonic-clonic activity
+pain and discomfort,with,awareness retention
+cephalic aura,followed by,behavioral arrest
+behavioral arrest,followed by,head deviation
+abnormal behavior change,followed by,staring
+staring,associated with,upper limb myoclonic activity
+awareness loss,then,unresponsiveness
+gustatory hallucination,followed by,oral paresthesia
+oral paresthesia,followed by,visual symptoms
+lower limb tingling,then,epigastric sensation
+epigastric sensation,followed by,loss of consciousness
+loss of consciousness,followed by,oral automatism
+focal clonic activity,followed by,tonic-clonic activity
+tonic-clonic activity,followed by,focal clonic activity
+staring,then,upper limb tonic
+limb posturing,then,upper limb flexion
+upper limb flexion,then,lower limb movement
+tonic activity,then,asymmetric tonic activity
+perioral motor activity,evolving to,focal seizure
+panic,followed by,tonic-clonic activity
+tonic-clonic activity,followed by,combined head and eye deviation
+convulsion,followed by,convulsion
+convulsion,followed by,bilateral tonic activity
+muscle weakness,then,focal seizure
+upper limb myoclonic activity,followed by,tonic-clonic activity
+tonic-clonic activity,followed by,myoclonic activity
+myoclonic activity,followed by,upper limb myoclonic activity
+tonic-clonic activity,followed by,upper limb myoclonic activity
+combined head and eye deviation,followed by,upper limb tonic
+upper limb tonic,followed by,head deviation
+head deviation,followed by,upper limb tonic
+upper limb tonic,followed by,lower limb twitching
+lower limb twitching,followed by,tachycardia
+tachycardia,followed by,absence seizure
+abnormal behavior change,followed by,combined head and eye deviation
+combined head and eye deviation,followed by,upper limb extension
+upper limb extension,followed by,upper limb automatism
+upper limb automatism,followed by,postictal paralysis
+dissociative sensations,followed by,eye deviation
+eye deviation,followed by,dystonia
+dystonia,followed by,loss of consciousness
+upper limb twitching,followed by,upper limb jerk
+nausea,preceded by,epigastric sensation
+awakening during sleep,followed by,dystonia
+dystonia,followed by,tonic-clonic activity
+gustatory hallucination,followed by,abnormal behavior change
+dystonia,followed by,focal clonic activity
+staring,followed by,unilateral blinking
+awareness alteration,followed by,abnormal behavior change
+abnormal behavior change,followed by,upper limb thrashing
+upper limb thrashing,followed by,lower limb extension
+lower limb extension,followed by,tonic activity
+tonic activity,followed by,cry
+cry,followed by,combined head and eye deviation
+combined head and eye deviation,followed by,tonic-clonic activity
+unresponsiveness,then,awareness retention
+unusual sensations,followed by,hyperkinetic automatism
+gestural automatism,followed by,vocal automatism
+vocal automatism,followed by,unresponsiveness
+focal seizure,followed by,behavioral arrest
+numbness,followed by,lower limb twitching
+confusion,followed by,loss of consciousness
+awareness loss,followed by,cough
+cough,followed by,awareness alteration
+awareness alteration,followed by,eye movement
+eye movement,followed by,upper limb twitching
+myoclonic activity,followed by,focal clonic activity
+vomiting,followed by,head deviation
+cough,followed by,staring
+staring,followed by,oral automatism
+oral automatism,followed by,automotor symptoms
+upper limb automatism,followed by,head deviation
+head deviation,followed by,awareness loss
+convulsion,followed by,loss of consciousness
+loss of consciousness,accompanied by,head movement
+behavioral arrest,followed by,abnormal in chest
+pain and discomfort,followed by,loss of consciousness
+loss of consciousness,followed by,automotor symptoms
+loss of consciousness,followed by,dystonia
+epigastric aura,followed by,déjà vu
+déjà vu,followed by,awareness alteration
+awareness alteration,followed by,oral automatism
+back pain or discomfort,followed by,sweating
+sweating,followed by,awareness alteration
+awareness alteration,followed by,unresponsiveness
+unresponsiveness,followed by,upper limb activity
+upper limb activity,followed by,altered facial expression
+altered facial expression,followed by,combined head and eye deviation
+combined head and eye deviation,followed by,upper limb tonic
+pain and discomfort,followed by,visual symptoms
+visual symptoms,after,upper limb tonic
+facial and head jerk,then,speech arrest
+focal clonic activity,followed by,confusion
+convulsion,followed by,eye deviation
+head deviation,followed by,upper limb tonic
+awareness loss,followed by,head movement
+rocking,accompanied by,limb movement
+awareness alteration,followed by,behavioral arrest
+visual symptoms,followed by,visual hallucinations
+awareness loss,followed by,focal clonic activity
+focal clonic activity,followed by,head deviation
+behavioral arrest,followed by,head deviation
+head deviation,followed by,eye movement
+eye movement,followed by,eye deviation
+head deviation,followed by,tonic-clonic activity
+sweating,then,focal seizure
+loss of consciousness,followed by,déjà vu
+déjà vu,followed by,fear
+fear,followed by,dissociative sensations
+tonic-clonic activity,followed by,awareness loss
+dizziness,followed by,visual distortion
+visual distortion,then,automotor symptoms
+automotor symptoms,then,tachycardia
+behavioral arrest,followed by,tachycardia
+unilateral versive,followed by,tonic-clonic activity
+behavioral arrest,and then,automotor symptoms
+visual symptoms,followed by,behavioral arrest
+behavioral arrest,then,tonic activity
+tonic activity,and,tonic-clonic activity
+behavioral arrest,then,automotor symptoms
+automotor symptoms,then,unilateral versive
+unilateral versive,then,tonic activity
+tachycardia,followed by,respiratory change
+upper limb tonic,then,tonic-clonic activity
+dizziness,followed by,automotor symptoms
+dizziness,followed by,tonic activity
+tonic activity,and then,tonic-clonic activity
+epigastric sensation,followed by,déjà vu
+déjà vu,followed by,tachycardia
+tachycardia,followed by,automotor symptoms
+automotor symptoms,followed by,dystonia
+postictal coughing,followed by,retching
+combined head and eye deviation,followed by,tonic-clonic activity
+loss of consciousness,followed by,tonic-clonic activity
+upper limb tingling,followed by,upper limb tonic
+upper limb tingling,followed by,tonic-clonic activity
+dystonia,followed by,tonic-clonic activity
+epigastric sensation,followed by,fatigue
+unilateral versive,then,upper limb tonic
+upper limb tonic,then,lower limb movement
+combined head and eye deviation,followed by,tonic-clonic activity
+staring,followed by,tonic-clonic activity
+tonic-clonic activity,followed by,lower limb paralysis
+fear,before,olfactory hallucination
+olfactory hallucination,then,staring
+combined head and eye deviation,followed by,tonic-clonic activity
+loss of consciousness,followed by,facial flushing
+facial flushing,followed by,oral automatism
+oral automatism,followed by,swallow difficulty
+bilateral tonic activity,followed by,spasm
+gustatory hallucination,followed by,unresponsiveness
+auditory hallucination,followed by,loss of consciousness
+somatosensory dysfunction,followed by,staring
+abnormal somatosensory sensation,followed by,staring
+staring,then,facial grimacing and twitching
+facial grimacing and twitching,then,upper limb automatism
+olfactory hallucination,followed by,abnormal somatosensory sensation
+abnormal somatosensory sensation,followed by,staring
+staring,followed by,focal clonic activity
+focal clonic activity,followed by,upper limb tonic
+upper limb tonic,followed by,tonic-clonic activity
+dissociative sensations,followed by,somatosensory dysfunction
+somatosensory dysfunction,then,staring
+staring,followed by,automotor symptoms
+automotor symptoms,then,dystonia
+epigastric aura,followed by,lower limb movement
+combined head and eye deviation,followed by,awareness alteration
+unilateral blinking,followed by,upper limb tonic
+spasm,after,behavioral arrest
+spasm,followed by,asymmetric posturing
+upper limb movement,then,lower limb movement
+combined head and eye deviation,then,upper limb jerk
+upper limb jerk,then,focal seizure
+olfactory hallucination,followed by,fear
+epigastric aura,followed by,vocal automatism
+complex automatism,and terminating with,cough
+limb posturing,then,head deviation
+eye deviation,followed by,head movement
+perioral motor activity,after,tonic activity
+asymmetric tonic activity,after,focal seizure
+upper limb tonic,then,upper limb twitching
+staring,then,upper limb automatism
+epigastric aura,followed by,eye deviation
+eye deviation,then,asymmetric tonic activity
+facial grimacing and twitching,followed by,awareness loss
+tonic-clonic activity,after,combined head and eye deviation
+ictal piloerection,followed by,sweating
+behavioral arrest,followed by,oral automatism
+olfactory hallucination,followed by,intense water drinking
+epigastric sensation,preceded by,olfactory hallucination
+numbness,followed by,upper limb tonic
+upper limb tonic,then,focal clonic activity
+lower limb tingling,then,upper limb extension
+upper limb flexion,followed by,bilateral tonic activity
+epigastric aura,followed by,oral automatism
+unilateral blinking,followed by,unilateral versive
+numbness,then,limb movement
+limb movement,then,lower limb movement
+olfactory hallucination,then,fatigue
+epigastric sensation,followed by,oral paresthesia
+fear,preceded by,loss of consciousness
+loss of consciousness,followed by,cry
+cry,followed by,pained facial expression
+pained facial expression,followed by,hyperkinetic automatism
+staring,before,tonic-clonic activity

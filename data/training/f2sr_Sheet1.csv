@@ -1,0 +1,191 @@
+Function,Region
+Cognitive Control,Superior Frontal Gyrus
+Cognitive Control,Middle Frontal Gyrus
+Cognitive Control,"Cingulate Gyrus, anterior division"
+Performance Monitoring,"Cingulate Gyrus, anterior division"
+Performance Monitoring,Frontal Medial Cortex
+Performance Monitoring,Superior Frontal Gyrus
+Sustained Attention,Superior Parietal Lobule
+Sustained Attention,Superior Frontal Gyrus
+Sustained Attention,"Cingulate Gyrus, anterior division"
+Spatial Attention,Superior Parietal Lobule
+Spatial Attention,Angular Gyrus
+Spatial Attention,Middle Frontal Gyrus
+Verbal Working Memory,Superior Frontal Gyrus
+Verbal Working Memory,"Inferior Frontal Gyrus, pars opercularis"
+Verbal Working Memory,Superior Parietal Lobule
+Spatial Working Memory,Superior Frontal Gyrus
+Spatial Working Memory,Superior Parietal Lobule
+Spatial Working Memory,Angular Gyrus
+Fine Motor Control,Precentral Gyrus
+Fine Motor Control,Postcentral Gyrus
+Fine Motor Control,Superior Parietal Lobule
+Gross Motor Control,Precentral Gyrus
+Gross Motor Control,Juxtapositional Lobule Cortex
+Gross Motor Control,Putamen
+Motor Coordination,Pallidum
+Motor Coordination,Putamen
+Motor Coordination,Superior Parietal Lobule
+Motor Planning,Superior Frontal Gyrus
+Motor Planning,Juxtapositional Lobule Cortex
+Motor Planning,Superior Parietal Lobule
+Speech Production,"Inferior Frontal Gyrus, pars opercularis"
+Speech Production,"Inferior Frontal Gyrus, pars triangularis"
+Speech Production,Precentral Gyrus
+Speech Comprehension,"Superior Temporal Gyrus, posterior division"
+Speech Comprehension,Planum Temporale
+Speech Comprehension,Angular Gyrus
+Phonological Processing,"Supramarginal Gyrus, posterior division"
+Phonological Processing,"Superior Temporal Gyrus, posterior division"
+Phonological Processing,"Inferior Frontal Gyrus, pars opercularis"
+Semantic Processing,Angular Gyrus
+Semantic Processing,"Middle Temporal Gyrus, posterior division"
+Semantic Processing,"Inferior Temporal Gyrus, anterior division"
+Syntactic Processing,"Inferior Frontal Gyrus, pars opercularis"
+Syntactic Processing,"Superior Temporal Gyrus, posterior division"
+Syntactic Processing,Angular Gyrus
+Reading,Angular Gyrus
+Reading,"Temporal Fusiform Cortex, posterior division"
+Reading,"Superior Temporal Gyrus, posterior division"
+Speech Motor Control,Precentral Gyrus
+Speech Motor Control,"Inferior Frontal Gyrus, pars opercularis"
+Speech Motor Control,Juxtapositional Lobule Cortex
+Primary Auditory Processing,Heschl's Gyrus (includes H1 and H2)
+Primary Auditory Processing,Planum Polare
+Pitch Processing,Heschl's Gyrus (includes H1 and H2)
+Pitch Processing,"Superior Temporal Gyrus, anterior division"
+Temporal Auditory Processing,"Superior Temporal Gyrus, anterior division"
+Temporal Auditory Processing,"Superior Temporal Gyrus, posterior division"
+Auditory Attention,"Superior Temporal Gyrus, posterior division"
+Auditory Attention,Superior Parietal Lobule
+Music Processing,"Superior Temporal Gyrus, anterior division"
+Music Processing,Planum Temporale
+Music Processing,Angular Gyrus
+Primary Visual Processing,Occipital Pole
+Primary Visual Processing,Supracalcarine Cortex
+Primary Visual Processing,Intracalcarine Cortex
+Visual Feature Detection,Cuneal Cortex
+Visual Feature Detection,"Lateral Occipital Cortex, superior division"
+Visual Feature Detection,"Lateral Occipital Cortex, inferior division"
+Object Recognition,"Temporal Fusiform Cortex, anterior division"
+Object Recognition,"Temporal Fusiform Cortex, posterior division"
+Object Recognition,Occipital Fusiform Gyrus
+Object Recognition,"Inferior Temporal Gyrus, posterior division"
+Face Recognition,"Temporal Fusiform Cortex, anterior division"
+Face Recognition,"Temporal Fusiform Cortex, posterior division"
+Face Recognition,Occipital Fusiform Gyrus
+Motion Detection,"Lateral Occipital Cortex, superior division"
+Motion Detection,Superior Parietal Lobule
+Motion Detection,"Middle Temporal Gyrus, temporooccipital part"
+Color Processing,Lingual Gyrus
+Color Processing,Temporal Occipital Fusiform Cortex
+Color Processing,"Lateral Occipital Cortex, inferior division"
+Visual Attention,Superior Parietal Lobule
+Visual Attention,Angular Gyrus
+Visual Attention,Middle Frontal Gyrus
+Visual Working Memory,Superior Frontal Gyrus
+Visual Working Memory,Superior Parietal Lobule
+Visual Working Memory,"Lateral Occipital Cortex, superior division"
+Spatial Perception,Superior Parietal Lobule
+Spatial Perception,Precuneous Cortex
+Spatial Perception,Cuneal Cortex
+Spatial Navigation,Hippocampus
+Spatial Navigation,"Parahippocampal Gyrus, posterior division"
+Spatial Navigation,Precuneous Cortex
+Spatial Memory,Hippocampus
+Spatial Memory,Superior Parietal Lobule
+Spatial Memory,Precuneous Cortex
+Spatial Transformation,Superior Parietal Lobule
+Spatial Transformation,Angular Gyrus
+Spatial Transformation,"Lateral Occipital Cortex, superior division"
+Episodic Encoding,Hippocampus
+Episodic Encoding,"Parahippocampal Gyrus, anterior division"
+Episodic Encoding,Frontal Medial Cortex
+Episodic Retrieval,Hippocampus
+Episodic Retrieval,Precuneous Cortex
+Episodic Retrieval,Angular Gyrus
+Semantic Memory,Angular Gyrus
+Semantic Memory,"Middle Temporal Gyrus, posterior division"
+Semantic Memory,Temporal Pole
+Autobiographical Memory,Frontal Medial Cortex
+Autobiographical Memory,Precuneous Cortex
+Autobiographical Memory,Hippocampus
+Emotional Memory,Amygdala
+Emotional Memory,Hippocampus
+Emotional Memory,"Parahippocampal Gyrus, anterior division"
+Fear Processing,Amygdala
+Fear Processing,Insular Cortex
+Fear Processing,"Cingulate Gyrus, anterior division"
+Disgust Processing,Insular Cortex
+Disgust Processing,Frontal Orbital Cortex
+Happiness Processing,Frontal Orbital Cortex
+Happiness Processing,Amygdala
+Happiness Processing,Accumbens
+Sadness Processing,Frontal Medial Cortex
+Sadness Processing,"Cingulate Gyrus, anterior division"
+Sadness Processing,Insular Cortex
+Anger Processing,Amygdala
+Anger Processing,Frontal Orbital Cortex
+Anger Processing,"Cingulate Gyrus, anterior division"
+Emotion Regulation,Frontal Medial Cortex
+Emotion Regulation,Middle Frontal Gyrus
+Emotion Regulation,"Cingulate Gyrus, anterior division"
+Reward Processing,Accumbens
+Reward Processing,Frontal Orbital Cortex
+Reward Processing,Amygdala
+Punishment Processing,Frontal Orbital Cortex
+Punishment Processing,Insular Cortex
+Punishment Processing,"Cingulate Gyrus, anterior division"
+Value Computation,Frontal Orbital Cortex
+Value Computation,Frontal Medial Cortex
+Value Computation,Accumbens
+Decision Making,Frontal Orbital Cortex
+Decision Making,Frontal Medial Cortex
+Decision Making,"Cingulate Gyrus, anterior division"
+Social Perception,"Superior Temporal Gyrus, posterior division"
+Social Perception,Temporal Pole
+Social Perception,Amygdala
+Empathy,Insular Cortex
+Empathy,"Cingulate Gyrus, anterior division"
+Empathy,"Superior Temporal Gyrus, posterior division"
+Social Memory,Amygdala
+Social Memory,Temporal Pole
+Social Memory,Hippocampus
+Self-Referential Thinking,Frontal Medial Cortex
+Self-Referential Thinking,Precuneous Cortex
+Self-Referential Thinking,"Cingulate Gyrus, posterior division"
+Self-Awareness,Frontal Medial Cortex
+Self-Awareness,Precuneous Cortex
+Self-Awareness,Insular Cortex
+Interoceptive Processing,Insular Cortex
+Interoceptive Processing,Central Opercular Cortex
+Interoceptive Processing,Parietal Operculum Cortex
+Pain Processing,Insular Cortex
+Pain Processing,Central Opercular Cortex
+Pain Processing,"Cingulate Gyrus, anterior division"
+Somatosensory Processing,Postcentral Gyrus
+Somatosensory Processing,Superior Parietal Lobule
+Somatosensory Processing,Parietal Operculum Cortex
+Body Ownership,Insular Cortex
+Body Ownership,Parietal Operculum Cortex
+Body Ownership,Superior Parietal Lobule
+Mathematical Cognition,Angular Gyrus
+Mathematical Cognition,Superior Parietal Lobule
+Mathematical Cognition,"Inferior Frontal Gyrus, pars opercularis"
+Multisensory Integration,"Superior Temporal Gyrus, posterior division"
+Multisensory Integration,Angular Gyrus
+Multisensory Integration,Insular Cortex
+Temporal Processing,"Superior Temporal Gyrus, anterior division"
+Temporal Processing,"Middle Temporal Gyrus, anterior division"
+Temporal Processing,"Inferior Temporal Gyrus, anterior division"
+Salience Detection,Insular Cortex
+Salience Detection,Central Opercular Cortex
+Salience Detection,"Cingulate Gyrus, anterior division"
+Habit Formation,Caudate
+Habit Formation,Putamen
+Habit Formation,Accumbens
+Arousal Regulation,Brain-Stem
+Arousal Regulation,Thalamus
+Arousal Regulation,"Cingulate Gyrus, anterior division"
+Sleep-Wake Regulation,Brain-Stem
+Sleep-Wake Regulation,Thalamus

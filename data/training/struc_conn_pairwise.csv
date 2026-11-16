@@ -1,0 +1,261 @@
+Region 1,Region 2
+Frontal Pole,Middle Frontal Gyrus
+Frontal Pole,Superior Frontal Gyrus
+Frontal Pole,Frontal Orbital Cortex
+Superior Frontal Gyrus,Frontal Pole
+Superior Frontal Gyrus,Middle Frontal Gyrus
+Superior Frontal Gyrus,Precentral Gyrus
+Superior Frontal Gyrus,Paracingulate Gyrus
+Superior Frontal Gyrus,Frontal Medial Cortex
+Middle Frontal Gyrus,Frontal Pole
+Middle Frontal Gyrus,Superior Frontal Gyrus
+Middle Frontal Gyrus,"Inferior Frontal Gyrus, pars triangularis"
+Middle Frontal Gyrus,"Inferior Frontal Gyrus, pars opercularis"
+Middle Frontal Gyrus,Precentral Gyrus
+Middle Frontal Gyrus,Angular Gyrus
+Middle Frontal Gyrus,Superior Parietal Lobule
+"Inferior Frontal Gyrus, pars triangularis",Middle Frontal Gyrus
+"Inferior Frontal Gyrus, pars triangularis","Inferior Frontal Gyrus, pars opercularis"
+"Inferior Frontal Gyrus, pars triangularis","Superior Temporal Gyrus, posterior division"
+"Inferior Frontal Gyrus, pars triangularis","Supramarginal Gyrus, anterior division"
+"Inferior Frontal Gyrus, pars triangularis",Angular Gyrus
+"Inferior Frontal Gyrus, pars opercularis","Inferior Frontal Gyrus, pars triangularis"
+"Inferior Frontal Gyrus, pars opercularis",Middle Frontal Gyrus
+"Inferior Frontal Gyrus, pars opercularis","Superior Temporal Gyrus, posterior division"
+"Inferior Frontal Gyrus, pars opercularis","Supramarginal Gyrus, posterior division"
+"Inferior Frontal Gyrus, pars opercularis",Precentral Gyrus
+Precentral Gyrus,Middle Frontal Gyrus
+Precentral Gyrus,Superior Frontal Gyrus
+Precentral Gyrus,"Inferior Frontal Gyrus, pars opercularis"
+Precentral Gyrus,Postcentral Gyrus
+Precentral Gyrus,Juxtapositional Lobule Cortex
+Frontal Medial Cortex,Superior Frontal Gyrus
+Frontal Medial Cortex,Paracingulate Gyrus
+Frontal Medial Cortex,Subcallosal Cortex
+Frontal Medial Cortex,Frontal Orbital Cortex
+Frontal Medial Cortex,"Cingulate Gyrus, anterior division"
+Frontal Orbital Cortex,Frontal Pole
+Frontal Orbital Cortex,Frontal Medial Cortex
+Frontal Orbital Cortex,Subcallosal Cortex
+Frontal Orbital Cortex,Temporal Pole
+Frontal Orbital Cortex,"Inferior Temporal Gyrus, anterior division"
+Frontal Operculum Cortex,Insular Cortex
+Frontal Operculum Cortex,Central Opercular Cortex
+Frontal Operculum Cortex,Precentral Gyrus
+Juxtapositional Lobule Cortex,Precentral Gyrus
+Juxtapositional Lobule Cortex,"Cingulate Gyrus, anterior division"
+Juxtapositional Lobule Cortex,Paracingulate Gyrus
+Paracingulate Gyrus,Frontal Medial Cortex
+Paracingulate Gyrus,Juxtapositional Lobule Cortex
+Paracingulate Gyrus,"Cingulate Gyrus, anterior division"
+Paracingulate Gyrus,Precuneous Cortex
+Subcallosal Cortex,Frontal Medial Cortex
+Subcallosal Cortex,Frontal Orbital Cortex
+Subcallosal Cortex,Temporal Pole
+Subcallosal Cortex,Amygdala
+Postcentral Gyrus,Precentral Gyrus
+Postcentral Gyrus,Superior Parietal Lobule
+Postcentral Gyrus,"Supramarginal Gyrus, anterior division"
+Postcentral Gyrus,Angular Gyrus
+Superior Parietal Lobule,Postcentral Gyrus
+Superior Parietal Lobule,Middle Frontal Gyrus
+Superior Parietal Lobule,Angular Gyrus
+Superior Parietal Lobule,"Supramarginal Gyrus, anterior division"
+Superior Parietal Lobule,"Supramarginal Gyrus, posterior division"
+Superior Parietal Lobule,Precuneous Cortex
+"Supramarginal Gyrus, anterior division",Postcentral Gyrus
+"Supramarginal Gyrus, anterior division",Superior Parietal Lobule
+"Supramarginal Gyrus, anterior division","Supramarginal Gyrus, posterior division"
+"Supramarginal Gyrus, anterior division","Inferior Frontal Gyrus, pars triangularis"
+"Supramarginal Gyrus, anterior division",Central Opercular Cortex
+"Supramarginal Gyrus, posterior division","Supramarginal Gyrus, anterior division"
+"Supramarginal Gyrus, posterior division",Superior Parietal Lobule
+"Supramarginal Gyrus, posterior division",Angular Gyrus
+"Supramarginal Gyrus, posterior division","Inferior Frontal Gyrus, pars opercularis"
+"Supramarginal Gyrus, posterior division","Superior Temporal Gyrus, posterior division"
+Angular Gyrus,Superior Parietal Lobule
+Angular Gyrus,"Supramarginal Gyrus, posterior division"
+Angular Gyrus,Middle Frontal Gyrus
+Angular Gyrus,"Inferior Frontal Gyrus, pars triangularis"
+Angular Gyrus,"Superior Temporal Gyrus, posterior division"
+Angular Gyrus,"Middle Temporal Gyrus, posterior division"
+Angular Gyrus,Precuneous Cortex
+"Cingulate Gyrus, anterior division",Paracingulate Gyrus
+"Cingulate Gyrus, anterior division",Frontal Medial Cortex
+"Cingulate Gyrus, anterior division",Juxtapositional Lobule Cortex
+"Cingulate Gyrus, anterior division","Cingulate Gyrus, posterior division"
+"Cingulate Gyrus, anterior division",Subcallosal Cortex
+"Cingulate Gyrus, posterior division","Cingulate Gyrus, anterior division"
+"Cingulate Gyrus, posterior division",Precuneous Cortex
+"Cingulate Gyrus, posterior division","Parahippocampal Gyrus, posterior division"
+"Cingulate Gyrus, posterior division",Hippocampus
+Precuneous Cortex,"Cingulate Gyrus, posterior division"
+Precuneous Cortex,Paracingulate Gyrus
+Precuneous Cortex,Superior Parietal Lobule
+Precuneous Cortex,Angular Gyrus
+Precuneous Cortex,Cuneal Cortex
+Insular Cortex,Central Opercular Cortex
+Insular Cortex,Parietal Operculum Cortex
+Insular Cortex,Frontal Operculum Cortex
+Insular Cortex,Temporal Pole
+Insular Cortex,Amygdala
+Insular Cortex,Putamen
+Central Opercular Cortex,Insular Cortex
+Central Opercular Cortex,Parietal Operculum Cortex
+Central Opercular Cortex,Frontal Operculum Cortex
+Central Opercular Cortex,"Supramarginal Gyrus, anterior division"
+Central Opercular Cortex,Postcentral Gyrus
+Parietal Operculum Cortex,Insular Cortex
+Parietal Operculum Cortex,Central Opercular Cortex
+Parietal Operculum Cortex,"Supramarginal Gyrus, posterior division"
+Heschl's Gyrus (includes H1 and H2),Planum Temporale
+Heschl's Gyrus (includes H1 and H2),Planum Polare
+Heschl's Gyrus (includes H1 and H2),"Superior Temporal Gyrus, anterior division"
+Heschl's Gyrus (includes H1 and H2),"Superior Temporal Gyrus, posterior division"
+Planum Polare,Heschl's Gyrus (includes H1 and H2)
+Planum Polare,Planum Temporale
+Planum Polare,"Superior Temporal Gyrus, anterior division"
+Planum Polare,Temporal Pole
+Planum Temporale,Heschl's Gyrus (includes H1 and H2)
+Planum Temporale,Planum Polare
+Planum Temporale,"Superior Temporal Gyrus, posterior division"
+Planum Temporale,"Supramarginal Gyrus, posterior division"
+"Superior Temporal Gyrus, anterior division","Superior Temporal Gyrus, posterior division"
+"Superior Temporal Gyrus, anterior division",Heschl's Gyrus (includes H1 and H2)
+"Superior Temporal Gyrus, anterior division",Planum Polare
+"Superior Temporal Gyrus, anterior division",Temporal Pole
+"Superior Temporal Gyrus, anterior division","Middle Temporal Gyrus, anterior division"
+"Superior Temporal Gyrus, posterior division","Superior Temporal Gyrus, anterior division"
+"Superior Temporal Gyrus, posterior division",Planum Temporale
+"Superior Temporal Gyrus, posterior division",Angular Gyrus
+"Superior Temporal Gyrus, posterior division","Supramarginal Gyrus, posterior division"
+"Superior Temporal Gyrus, posterior division","Inferior Frontal Gyrus, pars triangularis"
+"Superior Temporal Gyrus, posterior division","Inferior Frontal Gyrus, pars opercularis"
+"Superior Temporal Gyrus, posterior division","Middle Temporal Gyrus, posterior division"
+"Middle Temporal Gyrus, anterior division","Middle Temporal Gyrus, posterior division"
+"Middle Temporal Gyrus, anterior division","Superior Temporal Gyrus, anterior division"
+"Middle Temporal Gyrus, anterior division",Temporal Pole
+"Middle Temporal Gyrus, anterior division","Inferior Temporal Gyrus, anterior division"
+"Middle Temporal Gyrus, posterior division","Middle Temporal Gyrus, anterior division"
+"Middle Temporal Gyrus, posterior division","Superior Temporal Gyrus, posterior division"
+"Middle Temporal Gyrus, posterior division",Angular Gyrus
+"Middle Temporal Gyrus, posterior division","Middle Temporal Gyrus, temporooccipital part"
+"Middle Temporal Gyrus, posterior division","Inferior Temporal Gyrus, posterior division"
+"Middle Temporal Gyrus, temporooccipital part","Middle Temporal Gyrus, posterior division"
+"Middle Temporal Gyrus, temporooccipital part","Inferior Temporal Gyrus, temporooccipital part"
+"Middle Temporal Gyrus, temporooccipital part","Lateral Occipital Cortex, inferior division"
+"Inferior Temporal Gyrus, anterior division","Inferior Temporal Gyrus, posterior division"
+"Inferior Temporal Gyrus, anterior division","Middle Temporal Gyrus, anterior division"
+"Inferior Temporal Gyrus, anterior division",Temporal Pole
+"Inferior Temporal Gyrus, anterior division",Frontal Orbital Cortex
+"Inferior Temporal Gyrus, anterior division","Temporal Fusiform Cortex, anterior division"
+"Inferior Temporal Gyrus, posterior division","Inferior Temporal Gyrus, anterior division"
+"Inferior Temporal Gyrus, posterior division","Middle Temporal Gyrus, posterior division"
+"Inferior Temporal Gyrus, posterior division","Inferior Temporal Gyrus, temporooccipital part"
+"Inferior Temporal Gyrus, posterior division","Temporal Fusiform Cortex, posterior division"
+"Inferior Temporal Gyrus, temporooccipital part","Inferior Temporal Gyrus, posterior division"
+"Inferior Temporal Gyrus, temporooccipital part","Middle Temporal Gyrus, temporooccipital part"
+"Inferior Temporal Gyrus, temporooccipital part",Temporal Occipital Fusiform Cortex
+"Inferior Temporal Gyrus, temporooccipital part","Lateral Occipital Cortex, inferior division"
+Temporal Pole,"Superior Temporal Gyrus, anterior division"
+Temporal Pole,"Middle Temporal Gyrus, anterior division"
+Temporal Pole,"Inferior Temporal Gyrus, anterior division"
+Temporal Pole,Planum Polare
+Temporal Pole,Frontal Orbital Cortex
+Temporal Pole,Subcallosal Cortex
+Temporal Pole,Insular Cortex
+Temporal Pole,Amygdala
+"Parahippocampal Gyrus, anterior division","Parahippocampal Gyrus, posterior division"
+"Parahippocampal Gyrus, anterior division",Hippocampus
+"Parahippocampal Gyrus, anterior division","Temporal Fusiform Cortex, anterior division"
+"Parahippocampal Gyrus, anterior division",Amygdala
+"Parahippocampal Gyrus, posterior division","Parahippocampal Gyrus, anterior division"
+"Parahippocampal Gyrus, posterior division",Hippocampus
+"Parahippocampal Gyrus, posterior division","Cingulate Gyrus, posterior division"
+"Parahippocampal Gyrus, posterior division","Temporal Fusiform Cortex, posterior division"
+"Temporal Fusiform Cortex, anterior division","Temporal Fusiform Cortex, posterior division"
+"Temporal Fusiform Cortex, anterior division","Parahippocampal Gyrus, anterior division"
+"Temporal Fusiform Cortex, anterior division","Inferior Temporal Gyrus, anterior division"
+"Temporal Fusiform Cortex, posterior division","Temporal Fusiform Cortex, anterior division"
+"Temporal Fusiform Cortex, posterior division",Temporal Occipital Fusiform Cortex
+"Temporal Fusiform Cortex, posterior division","Parahippocampal Gyrus, posterior division"
+"Temporal Fusiform Cortex, posterior division","Inferior Temporal Gyrus, posterior division"
+Temporal Occipital Fusiform Cortex,"Temporal Fusiform Cortex, posterior division"
+Temporal Occipital Fusiform Cortex,"Inferior Temporal Gyrus, temporooccipital part"
+Temporal Occipital Fusiform Cortex,Occipital Fusiform Gyrus
+Temporal Occipital Fusiform Cortex,"Lateral Occipital Cortex, inferior division"
+"Lateral Occipital Cortex, superior division","Lateral Occipital Cortex, inferior division"
+"Lateral Occipital Cortex, superior division",Cuneal Cortex
+"Lateral Occipital Cortex, superior division",Superior Parietal Lobule
+"Lateral Occipital Cortex, superior division",Angular Gyrus
+"Lateral Occipital Cortex, inferior division","Lateral Occipital Cortex, superior division"
+"Lateral Occipital Cortex, inferior division",Temporal Occipital Fusiform Cortex
+"Lateral Occipital Cortex, inferior division","Middle Temporal Gyrus, temporooccipital part"
+"Lateral Occipital Cortex, inferior division","Inferior Temporal Gyrus, temporooccipital part"
+"Lateral Occipital Cortex, inferior division",Occipital Fusiform Gyrus
+Intracalcarine Cortex,Lingual Gyrus
+Intracalcarine Cortex,Cuneal Cortex
+Intracalcarine Cortex,Supracalcarine Cortex
+Supracalcarine Cortex,Cuneal Cortex
+Supracalcarine Cortex,Intracalcarine Cortex
+Supracalcarine Cortex,Occipital Pole
+Supracalcarine Cortex,Lingual Gyrus
+Cuneal Cortex,Precuneous Cortex
+Cuneal Cortex,"Lateral Occipital Cortex, superior division"
+Cuneal Cortex,Supracalcarine Cortex
+Cuneal Cortex,Intracalcarine Cortex
+Cuneal Cortex,Occipital Pole
+Cuneal Cortex,Lingual Gyrus
+Lingual Gyrus,Cuneal Cortex
+Lingual Gyrus,Supracalcarine Cortex
+Lingual Gyrus,Intracalcarine Cortex
+Lingual Gyrus,Occipital Fusiform Gyrus
+Lingual Gyrus,"Parahippocampal Gyrus, posterior division"
+Occipital Fusiform Gyrus,Temporal Occipital Fusiform Cortex
+Occipital Fusiform Gyrus,"Lateral Occipital Cortex, inferior division"
+Occipital Fusiform Gyrus,Lingual Gyrus
+Occipital Pole,Cuneal Cortex
+Occipital Pole,Supracalcarine Cortex
+Occipital Pole,"Lateral Occipital Cortex, superior division"
+Accumbens,Caudate
+Accumbens,Putamen
+Accumbens,Amygdala
+Accumbens,Subcallosal Cortex
+Accumbens,Frontal Orbital Cortex
+Amygdala,Hippocampus
+Amygdala,Temporal Pole
+Amygdala,"Parahippocampal Gyrus, anterior division"
+Amygdala,Subcallosal Cortex
+Amygdala,Accumbens
+Amygdala,Insular Cortex
+Amygdala,Frontal Orbital Cortex
+Brain-Stem,Thalamus
+Brain-Stem,Caudate
+Brain-Stem,Putamen
+Brain-Stem,Hippocampus
+Caudate,Putamen
+Caudate,Accumbens
+Caudate,Thalamus
+Caudate,Brain-Stem
+Caudate,Frontal Medial Cortex
+Hippocampus,Amygdala
+Hippocampus,"Parahippocampal Gyrus, anterior division"
+Hippocampus,"Parahippocampal Gyrus, posterior division"
+Hippocampus,"Cingulate Gyrus, posterior division"
+Hippocampus,Brain-Stem
+Pallidum,Putamen
+Pallidum,Caudate
+Pallidum,Thalamus
+Putamen,Caudate
+Putamen,Pallidum
+Putamen,Accumbens
+Putamen,Thalamus
+Putamen,Insular Cortex
+Putamen,Brain-Stem
+Thalamus,Brain-Stem
+Thalamus,Caudate
+Thalamus,Putamen
+Thalamus,Pallidum
+Thalamus,Hippocampus
+Thalamus,"Cingulate Gyrus, anterior division"
+Thalamus,"Cingulate Gyrus, posterior division"

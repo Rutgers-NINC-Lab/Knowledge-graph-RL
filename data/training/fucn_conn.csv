@@ -1,0 +1,129 @@
+功能网络,区域1,区域2,连接强度
+Auditory,Heschl's Gyrus (includes H1 and H2),Planum Polare,强
+Auditory,Heschl's Gyrus (includes H1 and H2),Planum Temporale,强
+Auditory,Planum Polare,Planum Temporale,中等
+Auditory (superior),"Superior Temporal Gyrus, anterior division","Superior Temporal Gyrus, posterior division",强
+Auditory (superior),"Superior Temporal Gyrus, anterior division",Temporal Pole,强
+Auditory (superior),"Superior Temporal Gyrus, posterior division",Temporal Pole,中等
+Auditory (superior),"Middle Temporal Gyrus, anterior division","Middle Temporal Gyrus, posterior division",强
+Auditory (superior),"Middle Temporal Gyrus, anterior division","Middle Temporal Gyrus, temporooccipital part",中等
+Auditory (superior),"Middle Temporal Gyrus, posterior division","Middle Temporal Gyrus, temporooccipital part",强
+Auditory (superior),"Inferior Temporal Gyrus, anterior division","Inferior Temporal Gyrus, posterior division",强
+Auditory (superior),"Inferior Temporal Gyrus, anterior division","Inferior Temporal Gyrus, temporooccipital part",中等
+Auditory (superior),"Inferior Temporal Gyrus, posterior division","Inferior Temporal Gyrus, temporooccipital part",强
+Auditory (superior),"Superior Temporal Gyrus, anterior division","Middle Temporal Gyrus, anterior division",中等
+Auditory (superior),"Superior Temporal Gyrus, posterior division","Middle Temporal Gyrus, posterior division",中等
+Auditory (superior),"Middle Temporal Gyrus, anterior division","Inferior Temporal Gyrus, anterior division",中等
+DLPFC loops,Frontal Pole,Superior Frontal Gyrus,强
+DLPFC loops,Frontal Pole,Middle Frontal Gyrus,强
+DLPFC loops,Superior Frontal Gyrus,Middle Frontal Gyrus,强
+DLPFC loops,Middle Frontal Gyrus,"Inferior Frontal Gyrus, pars triangularis",强
+DLPFC loops,Middle Frontal Gyrus,"Inferior Frontal Gyrus, pars opercularis",强
+DLPFC loops,"Inferior Frontal Gyrus, pars triangularis","Inferior Frontal Gyrus, pars opercularis",强
+DLPFC loops,Superior Frontal Gyrus,Precentral Gyrus,中等
+DLPFC loops,Middle Frontal Gyrus,Precentral Gyrus,强
+DLPFC loops,Frontal Pole,"Inferior Frontal Gyrus, pars triangularis",中等
+DMN (subcortical),Hippocampus,Amygdala,强
+DMN (subcortical),Caudate,Putamen,强
+DMN (subcortical),Caudate,Accumbens,强
+DMN (subcortical),Putamen,Pallidum,强
+DMN (subcortical),Caudate,Thalamus,强
+DMN (subcortical),Putamen,Thalamus,强
+DMN (subcortical),Pallidum,Thalamus,中等
+DMN (subcortical),Hippocampus,Thalamus,中等
+DMN (subcortical),Amygdala,Accumbens,中等
+DMN (subcortical),Brain-Stem,Thalamus,强
+DMN (subcortical),Accumbens,Putamen,中等
+DMN & Sensorimotor integration,Frontal Medial Cortex,Paracingulate Gyrus,强
+DMN & Sensorimotor integration,Frontal Medial Cortex,Subcallosal Cortex,强
+DMN & Sensorimotor integration,Paracingulate Gyrus,Precuneous Cortex,强
+DMN & Sensorimotor integration,Frontal Orbital Cortex,Frontal Medial Cortex,强
+DMN & Sensorimotor integration,Juxtapositional Lobule Cortex,Frontal Medial Cortex,中等
+DMN & Sensorimotor integration,"Parahippocampal Gyrus, anterior division","Parahippocampal Gyrus, posterior division",强
+DMN & Sensorimotor integration,"Temporal Fusiform Cortex, anterior division","Temporal Fusiform Cortex, posterior division",强
+DMN & Sensorimotor integration,"Temporal Fusiform Cortex, posterior division",Temporal Occipital Fusiform Cortex,强
+DMN & Sensorimotor integration,Intracalcarine Cortex,Precuneous Cortex,中等
+DMN & Sensorimotor integration,Frontal Operculum Cortex,Frontal Medial Cortex,中等
+DMN & Sensorimotor integration,Frontal Orbital Cortex,Subcallosal Cortex,中等
+DMN (cuneus),Cuneal Cortex,Occipital Pole,强
+DMN (cuneus),"Lateral Occipital Cortex, superior division","Lateral Occipital Cortex, inferior division",强
+DMN (cuneus),"Lateral Occipital Cortex, superior division",Cuneal Cortex,强
+DMN (cuneus),Lingual Gyrus,Cuneal Cortex,强
+DMN (cuneus),Supracalcarine Cortex,Cuneal Cortex,强
+DMN (cuneus),Occipital Pole,"Lateral Occipital Cortex, superior division",强
+DMN (cuneus),Lingual Gyrus,Supracalcarine Cortex,中等
+DMN (cuneus),Occipital Pole,Supracalcarine Cortex,中等
+DMN (posterior),"Cingulate Gyrus, anterior division","Cingulate Gyrus, posterior division",强
+DMN (posterior),"Inferior Temporal Gyrus, anterior division","Inferior Temporal Gyrus, posterior division",强
+DMN (posterior),"Inferior Temporal Gyrus, posterior division","Inferior Temporal Gyrus, temporooccipital part",强
+DMN (posterior),"Middle Temporal Gyrus, anterior division","Middle Temporal Gyrus, posterior division",强
+DMN (posterior),"Middle Temporal Gyrus, posterior division","Middle Temporal Gyrus, temporooccipital part",强
+DMN (posterior),"Superior Temporal Gyrus, anterior division","Superior Temporal Gyrus, posterior division",强
+DMN (posterior),"Superior Temporal Gyrus, anterior division",Temporal Pole,强
+DMN (posterior),"Cingulate Gyrus, posterior division","Superior Temporal Gyrus, posterior division",中等
+Dorsal Attention,Angular Gyrus,Superior Parietal Lobule,强
+Dorsal Attention,Superior Parietal Lobule,Postcentral Gyrus,强
+Dorsal Attention,"Supramarginal Gyrus, anterior division","Supramarginal Gyrus, posterior division",强
+Dorsal Attention,Angular Gyrus,"Supramarginal Gyrus, posterior division",强
+Dorsal Attention,Superior Parietal Lobule,"Supramarginal Gyrus, anterior division",中等
+Dorsal Attention,Angular Gyrus,Postcentral Gyrus,中等
+Frontoparietal,Frontal Pole,Angular Gyrus,强
+Frontoparietal,Superior Frontal Gyrus,Superior Parietal Lobule,强
+Frontoparietal,Middle Frontal Gyrus,Angular Gyrus,强
+Frontoparietal,"Inferior Frontal Gyrus, pars triangularis","Supramarginal Gyrus, anterior division",强
+Frontoparietal,"Inferior Frontal Gyrus, pars opercularis","Supramarginal Gyrus, posterior division",强
+Frontoparietal,Precentral Gyrus,Postcentral Gyrus,强
+Frontoparietal,Superior Frontal Gyrus,Middle Frontal Gyrus,中等
+Frontoparietal,Middle Frontal Gyrus,Superior Parietal Lobule,中等
+Frontoparietal Control,Frontal Pole,Superior Frontal Gyrus,强
+Frontoparietal Control,Superior Frontal Gyrus,Middle Frontal Gyrus,强
+Frontoparietal Control,Middle Frontal Gyrus,"Inferior Frontal Gyrus, pars triangularis",强
+Frontoparietal Control,"Inferior Frontal Gyrus, pars triangularis","Inferior Frontal Gyrus, pars opercularis",强
+Frontoparietal Control,Middle Frontal Gyrus,Precentral Gyrus,强
+Frontoparietal Control,Superior Frontal Gyrus,Precentral Gyrus,中等
+Frontoparietal Control,Frontal Pole,Middle Frontal Gyrus,中等
+Language,Heschl's Gyrus (includes H1 and H2),Planum Temporale,强
+Language,Planum Polare,Planum Temporale,强
+Language,Heschl's Gyrus (includes H1 and H2),Planum Polare,强
+Limbic,Hippocampus,Amygdala,强
+Limbic,Caudate,Putamen,强
+Limbic,Putamen,Pallidum,强
+Limbic,Accumbens,Caudate,强
+Limbic,Thalamus,Hippocampus,中等
+Limbic,Thalamus,Amygdala,中等
+Limbic,Brain-Stem,Thalamus,强
+Limbic,Accumbens,Putamen,中等
+Limbic (anterior),"Inferior Temporal Gyrus, anterior division","Inferior Temporal Gyrus, posterior division",强
+Limbic (anterior),"Middle Temporal Gyrus, anterior division","Middle Temporal Gyrus, posterior division",强
+Limbic (anterior),"Superior Temporal Gyrus, anterior division","Superior Temporal Gyrus, posterior division",强
+Limbic (anterior),"Superior Temporal Gyrus, anterior division",Temporal Pole,强
+Limbic (anterior),"Inferior Temporal Gyrus, anterior division",Temporal Pole,中等
+Limbic (anterior),"Middle Temporal Gyrus, anterior division",Temporal Pole,中等
+Reward circuits,Accumbens,Caudate,强
+Reward circuits,Accumbens,Putamen,强
+Reward circuits,Amygdala,Accumbens,强
+Reward circuits,Putamen,Pallidum,强
+Reward circuits,Hippocampus,Amygdala,中等
+Reward circuits,Thalamus,Caudate,强
+Reward circuits,Brain-Stem,Accumbens,中等
+Reward circuits,Thalamus,Putamen,中等
+Salience,Central Opercular Cortex,Insular Cortex,强
+Salience,Insular Cortex,Parietal Operculum Cortex,强
+Salience,Central Opercular Cortex,Parietal Operculum Cortex,中等
+Salience/Limbic (anterior),"Cingulate Gyrus, anterior division","Cingulate Gyrus, posterior division",强
+Sensorimotor,Angular Gyrus,Postcentral Gyrus,中等
+Sensorimotor,Postcentral Gyrus,Superior Parietal Lobule,强
+Sensorimotor,"Supramarginal Gyrus, anterior division","Supramarginal Gyrus, posterior division",强
+Sensorimotor,Angular Gyrus,"Supramarginal Gyrus, anterior division",中等
+Sensorimotor,Superior Parietal Lobule,"Supramarginal Gyrus, posterior division",中等
+Sensorimotor integration,Central Opercular Cortex,Insular Cortex,强
+Sensorimotor integration,Insular Cortex,Parietal Operculum Cortex,强
+Sensorimotor integration,Central Opercular Cortex,Parietal Operculum Cortex,中等
+Visual Network,Cuneal Cortex,Occipital Pole,强
+Visual Network,"Lateral Occipital Cortex, superior division","Lateral Occipital Cortex, inferior division",强
+Visual Network,Lingual Gyrus,Cuneal Cortex,强
+Visual Network,Supracalcarine Cortex,Cuneal Cortex,强
+Visual Network,Intracalcarine Cortex,Lingual Gyrus,强
+Visual Network,Occipital Fusiform Gyrus,"Lateral Occipital Cortex, inferior division",中等
+Visual Network,Lingual Gyrus,Supracalcarine Cortex,中等
+Visual Network,Occipital Pole,Supracalcarine Cortex,中等    

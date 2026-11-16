@@ -1,0 +1,64 @@
+upper limb tingling -> muscle weakness -> upper limb automatism
+complex motor symptoms -> muscle weakness -> head deviation
+automotor symptoms -> muscle weakness -> head deviation
+epigastric aura -> automotor symptoms -> muscle weakness
+visual symptoms -> automotor symptoms -> muscle weakness -> dystonia
+fear -> automotor symptoms -> muscle weakness
+visual symptoms -> upper limb tingling -> automotor symptoms -> muscle weakness
+vestibular symptoms -> automotor symptoms -> muscle weakness
+upper limb tingling -> clonic activity -> tonic-clonic activity
+facial flushing -> epigastric aura -> fatigue
+staring -> tonic-clonic activity -> muscle weakness
+mood change -> anger -> vocal automatism -> staring
+fear -> epigastric aura -> olfactory hallucination -> confusion -> staring
+staring -> cry -> atonic activity -> facial grimacing and twitching -> tonic-clonic activity
+head deviation -> tonic activity -> tonic-clonic activity
+loss of consciousness -> facial flushing -> oral automatism -> swallow difficulty -> oral movement
+déjà vu -> olfactory hallucination -> confusion -> gestural automatism
+gustatory hallucination -> oral movement -> unresponsiveness
+epigastric aura -> abnormal somatosensory sensation -> olfactory hallucination -> awareness loss -> staring -> oral automatism
+abnormal somatosensory sensation -> gustatory hallucination -> awareness loss -> staring -> oral automatism -> dystonia
+abnormal somatosensory sensation -> awareness loss -> staring -> facial grimacing and twitching -> upper limb automatism
+olfactory hallucination -> abnormal somatosensory sensation -> awareness loss -> staring -> clonic activity -> upper limb tonic -> tonic-clonic activity
+dissociative sensations -> abnormal somatosensory sensation -> olfactory hallucination -> awareness loss -> staring -> upper limb automatism -> oral automatism -> dystonia
+abnormal somatosensory sensation -> awareness loss -> staring -> oral automatism -> upper limb automatism -> dystonia -> clonic activity
+abnormal somatosensory sensation -> awareness loss -> staring -> oral automatism -> communication difficulty
+visual distortion -> absence seizure -> upper limb automatism
+tonic activity -> dystonia -> hyperkinetic automatism
+behavioral arrest -> eye deviation -> oral automatism -> genital automatism -> upper limb automatism
+abnormal somatosensory sensation -> breath difficulty -> dystonia -> spasm -> genital automatism -> postictal paralysis
+awakening during sleep -> complex motor symptoms -> postictal biting -> genital automatism
+visual symptoms -> behavioral arrest -> head deviation -> eye movement -> postictal paralysis -> genital automatism
+awakening during sleep -> complex motor symptoms -> complex movement -> dystonia -> upper limb automatism -> oral automatism -> head deviation -> genital automatism
+vestibular symptoms -> oral automatism -> upper limb automatism -> genital automatism
+behavioral arrest -> fear -> facial expression -> unilateral blinking -> oral automatism -> upper limb automatism -> genital automatism
+behavioral arrest -> tonic activity -> oral movement -> eye deviation -> head deviation -> dystonia -> awareness loss -> clonic activity -> confusion -> dystonia
+eye deviation -> tonic-clonic activity -> vomiting
+eye movement -> tonic activity -> upper limb flexion
+visual hallucination -> dizziness -> bilateral sensory symptoms -> clonic activity -> tonic activity -> combined head and eye deviation
+combined head and eye deviation -> upper limb jerk -> focal seizure
+olfactory hallucination -> fear -> numbness
+cephalic aura -> focal seizure -> oral movement -> cough -> breath difficulty -> fear -> dissociative sensations
+spasm -> eye deviation -> atonic activity
+staring -> upper limb automatism -> myoclonic activity
+unusual sensations -> eye deviation -> asymmetric tonic activity
+vestibular symptoms -> unilateral versive -> asymmetric tonic activity -> tonic-clonic activity
+vestibular symptoms -> asymmetric tonic activity -> unilateral versive -> tonic-clonic activity
+unilateral versive -> complex motor symptoms -> tonic-clonic activity
+focal seizure -> facial grimacing and twitching -> pain and discomfort -> awareness loss
+awareness loss -> staring -> complex automatism
+gustatory hallucination -> automotor symptoms -> upper limb automatism
+behavioral arrest -> hypomotor activity -> complex automatism
+abdominal symptoms -> dystonia -> behavioral arrest -> speech arrest -> upper limb automatism
+fear -> déjà vu -> upper limb automatism -> communication difficulty
+breath difficulty -> facial flushing -> confusion -> intense water drinking
+epigastric sensation -> olfactory hallucination -> intense water drinking
+fear -> staring -> oral automatism
+upper limb tingling -> upper limb tonic -> clonic activity
+epigastric aura -> facial flushing -> oral automatism
+altered facial expression -> awareness loss -> upper limb automatism -> atonic activity
+unresponsiveness -> unilateral blinking -> unilateral versive -> convulsion
+unresponsiveness -> gestural automatism -> tonic activity
+epigastric aura -> head deviation -> tonic-clonic activity
+fear -> loss of consciousness -> cry -> oral movement -> complex motor symptoms
+dizziness -> unusual sensations -> communication difficulty -> cognitive dysfunction -> confusion -> upper limb tonic -> confusion

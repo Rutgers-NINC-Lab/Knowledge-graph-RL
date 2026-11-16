@@ -22,7 +22,9 @@ python scripts/run_experiments.py
 
 On Windows, `RUN_DEMO.ps1` runs the core workflow; add `-Experiments` for the experiment suite.
 
-`configs/example.json` contains illustrative parameters and selects CUDA by default. The workflows generate synthetic inputs; the original clinical data, paper hyperparameters, and pretrained models are not included.
+`configs/example.json` contains illustrative parameters and selects CUDA by default. The example workflows generate synthetic inputs.
+
+Original training tables and sequence lists are provided in [`data/training/`](data/training/). The example commands above continue to use synthetic data. Clinical evaluation datasets, embeddings, paper hyperparameters, and pretrained models are not included.
 
 The complete study-scale workflow is estimated at 1-2 days on one GPU. This is a planning estimate from archived training runs, not a timing of the supplied example; see [runtime details](docs/RUNTIME.md).
 
