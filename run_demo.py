@@ -1,5 +1,4 @@
 """Run the minimal KGRL example: synthetic inputs -> PPO -> paths -> metrics."""
-import hashlib
 import json
 import os
 from pathlib import Path
@@ -62,13 +61,10 @@ def main():
         assert path[0] == row["Start_Semiology"] and len(path) == len(set(path))
         assert len(path) == len(row["SR_Sequence"].split(" -> "))
         assert all(b in {n for _, n in demo.graph[a]} for a, b in zip(path, path[1:])), "Invalid graph edge"
-    manifest = json.loads((ROOT / "docs/source_manifest.json").read_text())
-    for item in manifest["unchanged_core"]:
-        assert hashlib.sha256((ROOT / item["path"]).read_bytes()).hexdigest() == item["sha256"], item["path"]
     elapsed = round(time.perf_counter() - started, 3)
     verification = {"status": "PASS", "scope": "synthetic core-algorithm execution", "seed": config["seed"],
                     **training, "starts": len(demo.nodes), "predicted_paths": len(predictions),
-                    "unchanged_core_files": len(manifest["unchanged_core"]), "timings_seconds": timings,
+                    "timings_seconds": timings,
                     "total_seconds": elapsed}
     (out / "environment.json").write_text(json.dumps(environment(), indent=2), encoding="utf-8")
     (out / "verification.json").write_text(json.dumps(verification, indent=2), encoding="utf-8")

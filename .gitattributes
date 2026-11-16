@@ -1,5 +1,5 @@
 * text=auto eol=lf
-# Preserve the exact source bytes checked by docs/source_manifest.json.
+# Preserve source file bytes without line-ending conversion.
 src/kgrl/** -text
 # Preserve the original training data bytes.
 data/training/* -text
